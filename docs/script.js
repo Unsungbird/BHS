@@ -18,7 +18,7 @@ const modalBody = document.getElementById('modalBody');
 async function loadWikiData() {
     try {
         // Try to load from the data folder
-        const response = await fetch('..data/wiki-data.json');
+        const response = await fetch('data/wiki-data.json');
         if (!response.ok) throw new Error('Data not found');
         
         wikiData = await response.json();
