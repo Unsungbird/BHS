@@ -19,6 +19,16 @@
       "id": "1761425261203",
       "createdAt": "2025-10-25T20:47:41.203Z",
       "createdBy": "tsarra_nade"
+    },
+    {
+      "name": "Sun System",
+      "category": "Solar System",
+      "description": "The Sun System is the birthplace of mankind, now characterized by stark social divides. Aristocrats indulge in the remaining wealth of a deteriorating planet, while the impoverished struggle for survival, unable to afford escape from the harsh conditions of their home world.",
+      "isUpdate": false,
+      "relatedTopics": [],
+      "id": "1761429141382",
+      "createdAt": "2025-10-25T21:52:21.382Z",
+      "createdBy": "tsarra_nade"
     }
   ]
 }
