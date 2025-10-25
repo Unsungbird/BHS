@@ -102,7 +102,7 @@ function renderEntries() {
                 <h3 class="entry-name">${entry.name}</h3>
                 <span class="entry-category">${entry.category}</span>
             </div>
-            <p class="entry-description">${entry.description}</p>
+            <p class="entry-description">${autoLinkDescription(entry.description)}</p>
             <div class="entry-meta">
                 <span>By ${entry.createdBy || 'Unknown'}</span>
                 <span>${formatDate(entry.createdAt)}</span>
@@ -148,7 +148,7 @@ function openModal(entryId) {
     modalBody.innerHTML = `
         <h2 class="modal-title">${entry.name}</h2>
         <span class="modal-category">${entry.category}</span>
-        <p class="modal-description">${entry.description}</p>
+        <p class="modal-description">${autoLinkDescription(entry.description)}</p>
         ${relatedSection}
         <div class="modal-footer">
             <div>Added by <strong>${entry.createdBy || 'Unknown'}</strong> on ${formatDate(entry.createdAt)}</div>
@@ -179,6 +179,26 @@ function formatDate(dateString) {
         month: 'short', 
         day: 'numeric' 
     });
+}
+
+// Utility: Auto-link existing entries in descriptions
+function autoLinkDescription(description) {
+    if (!description) return '';
+    
+    let linkedDescription = description;
+    
+    // Sort entries by name length (longest first) to handle overlapping names
+    const sortedEntries = [...wikiData.entries].sort((a, b) => b.name.length - a.name.length);
+    
+    sortedEntries.forEach(entry => {
+        // Create a case-insensitive regex that matches whole words
+        const regex = new RegExp(`\\b(${entry.name})\\b`, 'gi');
+        linkedDescription = linkedDescription.replace(regex, (match) => {
+            return `<span class="wiki-link" onclick="event.stopPropagation(); openModal('${entry.id}')">${match}</span>`;
+        });
+    });
+    
+    return linkedDescription;
 }
 
 // Update last sync time

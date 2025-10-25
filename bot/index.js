@@ -37,17 +37,19 @@ function saveWikiData(data) {
 
 // Process wiki entry with ChatGPT
 async function processWikiEntry(content, existingEntries) {
+  const existingNames = existingEntries.map(e => e.name);
   const prompt = `You are a helpful assistant that processes TTRPG world-building information for a wiki.
 
 Given the following information: "${content}"
 
-Existing wiki entries for reference: ${JSON.stringify(existingEntries.slice(-10))}
+Existing wiki entry names: ${JSON.stringify(existingNames)}
 
 Please:
 1. Extract the main subject/topic name
 2. Categorize it (Location, NPC, Item, Lore, Event, Faction, or Other)
 3. Write a clean, wiki-style description (2-4 sentences)
 4. Check if this topic already exists in the wiki. If it does, indicate you're updating it.
+5. IMPORTANT: Identify any mentions of existing wiki entries in your description and list them in relatedTopics. Look for exact matches (case-insensitive) of entry names that appear in the description.
 
 Respond in JSON format:
 {
@@ -55,7 +57,7 @@ Respond in JSON format:
   "category": "Category",
   "description": "Clean description here",
   "isUpdate": false,
-  "relatedTopics": ["topic1", "topic2"]
+  "relatedTopics": ["ExistingEntry1", "ExistingEntry2"]
 }`;
 
   const response = await openai.chat.completions.create({
@@ -135,6 +137,9 @@ client.on('messageCreate', async (message) => {
 
 \`!wiki [content]\` - Add or update a wiki entry
 Example: \`!wiki NPC Gandor is a sketchy merchant in Waterdeep\`
+
+\`!wiki-search [term]\` - Search for wiki entries
+Example: \`!wiki-search Waterdeep\`
 
 \`!wiki-stats\` - Show wiki statistics
 \`!wiki-help\` - Show this help message`);

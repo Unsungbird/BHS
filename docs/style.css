@@ -355,6 +355,20 @@ body {
     font-size: 0.9rem;
 }
 
+/* Wiki Links */
+.wiki-link {
+    color: var(--accent);
+    text-decoration: underline;
+    text-decoration-style: dotted;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.wiki-link:hover {
+    color: #8b5cf6;
+    text-decoration-style: solid;
+}
+
 /* Responsive */
 @media (max-width: 768px) {
     .container {
