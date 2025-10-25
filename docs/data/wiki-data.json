@@ -2,7 +2,7 @@
   "entries": [
     {
       "name": "Proxima B",
-      "category": "Location",
+      "category": "Planet",
       "description": "Proxima B is a tidally locked planet located in the habitable zone of its star, offering suitable conditions for life. Its unique position results in one side perpetually facing the star and the other shrouded in darkness, creating diverse ecological zones and climatic conditions. This Goldilocks planet hosts various ecosystems and potentially intelligent life forms, making it a significant location for exploration and adventure.",
       "isUpdate": false,
       "relatedTopics": [],
@@ -12,7 +12,7 @@
     },
     {
       "name": "Heliograss",
-      "category": "Location",
+      "category": "Moon",
       "description": "Heliograss is a habitable moon orbiting an inhospitable gas giant. Characterized by reflective clouds and wide temperate zones, it features giant bioluminescent forests that support diverse life forms. The strong magnetic field of the moon mitigates the effects of solar flares, creating a stable environment for ecosystems to thrive.",
       "isUpdate": false,
       "relatedTopics": [],
