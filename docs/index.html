@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TTRPG World Wiki</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <header class="header">
+            <h1 class="title">⚔️ Campaign Wiki</h1>
+            <p class="subtitle">Your collaborative world-building companion</p>
+        </header>
+
+        <!-- Search and Filter -->
+        <div class="controls">
+            <input 
+                type="text" 
+                id="searchInput" 
+                class="search-input" 
+                placeholder="🔍 Search entries..."
+            >
+            
+            <div class="filter-buttons" id="categoryFilters">
+                <button class="filter-btn active" data-category="all">All</button>
+            </div>
+        </div>
+
+        <!-- Stats Bar -->
+        <div class="stats-bar" id="statsBar">
+            <div class="stat">
+                <span class="stat-number" id="totalEntries">0</span>
+                <span class="stat-label">Total Entries</span>
+            </div>
+        </div>
+
+        <!-- Wiki Entries Grid -->
+        <div class="entries-grid" id="entriesGrid">
+            <div class="loading">Loading wiki entries...</div>
+        </div>
+
+        <!-- Entry Modal -->
+        <div class="modal" id="entryModal">
+            <div class="modal-content">
+                <span class="modal-close" id="modalClose">&times;</span>
+                <div id="modalBody"></div>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <p>Updated automatically via Discord bot • Last sync: <span id="lastUpdate">Never</span></p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
