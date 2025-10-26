@@ -382,6 +382,19 @@
       "id": "1761442483159",
       "createdAt": "2025-10-26T01:34:43.159Z",
       "createdBy": "tsarra_nade"
+    },
+    {
+      "name": "Free Miners' Syndicate",
+      "category": "Faction",
+      "description": "The Free Miners' Syndicate is a powerful union that emerged from the oppressed labor of miners in Barnard's Star. Initially formed as a response to corporate exploitation by the Concord of Systems, the Syndicate evolved into a formidable guild and cartel, controlling trade routes and enforcing their will throughout the region. Its leaders, known as Foremen, navigate the fine line between criminality and legitimacy, making them both the law of the frontier and a significant threat to corporate interests.",
+      "isUpdate": false,
+      "relatedTopics": [
+        "Barnard's Star",
+        "Concord of Systems"
+      ],
+      "id": "1761442518066",
+      "createdAt": "2025-10-26T01:35:18.066Z",
+      "createdBy": "tsarra_nade"
     }
   ]
 }
