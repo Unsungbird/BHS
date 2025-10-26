@@ -408,6 +408,22 @@
       "id": "1761442575978",
       "createdAt": "2025-10-26T01:36:15.978Z",
       "createdBy": "tsarra_nade"
+    },
+    {
+      "name": "Red Sky Compact",
+      "category": "Faction",
+      "description": "The Red Sky Compact is a rebel faction born in the dust of Ra's Path, a tidally locked desert world in the Wolf 359 system. Formed by settlers resisting oppressive taxation and resource seizure by the Concord, they evolved from farmers, smugglers, and refugees into a network of defiance against bureaucracy. Their rebellion has spread across various locations, including the mines of Barnard and the slums of Centauria, with their actions representing the human spirit's struggle for freedom.",
+      "isUpdate": false,
+      "relatedTopics": [
+        "Ra's Path",
+        "Wolf 359",
+        "Barnard",
+        "Centauria",
+        "Concord of Systems"
+      ],
+      "id": "1761442602199",
+      "createdAt": "2025-10-26T01:36:42.199Z",
+      "createdBy": "tsarra_nade"
     }
   ]
 }
