@@ -260,6 +260,16 @@
       "id": "1761441530268",
       "createdAt": "2025-10-26T01:18:50.268Z",
       "createdBy": "tsarra_nade"
+    },
+    {
+      "name": "Niflheim",
+      "category": "Planet",
+      "description": "Niflheim is a Super-Earth located in a cold orbit, characterized by its subsurface oceans that support marine life. Human settlements are buried beneath a layer of ice, providing insulation against the frigid environment above. This unique habitat suggests a complex ecosystem adapted to extreme cold and low light conditions.",
+      "isUpdate": false,
+      "relatedTopics": [],
+      "id": "1761441762297",
+      "createdAt": "2025-10-26T01:22:42.297Z",
+      "createdBy": "tsarra_nade"
     }
   ]
 }
