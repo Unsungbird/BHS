@@ -283,6 +283,16 @@
       "id": "1761441850245",
       "createdAt": "2025-10-26T01:24:10.245Z",
       "createdBy": "tsarra_nade"
+    },
+    {
+      "name": "Luhman",
+      "category": "System",
+      "description": "Luhman is a star system that includes the binary star pair Luhman 16 A and Luhman 16 B, which are located approximately 6.5 light years away from Earth in the constellation of Volans. This system is notable for harboring multiple exoplanets, making it a subject of interest for astrophysics and astrobiology. Its proximity to our own Solar System provides a valuable opportunity for future exploratory missions and studies regarding potential life beyond Earth.",
+      "isUpdate": false,
+      "relatedTopics": [],
+      "id": "1761442003030",
+      "createdAt": "2025-10-26T01:26:43.030Z",
+      "createdBy": "tsarra_nade"
     }
   ]
 }
