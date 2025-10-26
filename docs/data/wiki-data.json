@@ -448,6 +448,19 @@
       "id": "1761442658921",
       "createdAt": "2025-10-26T01:37:38.921Z",
       "createdBy": "tsarra_nade"
+    },
+    {
+      "name": "Order of Abzu",
+      "category": "Faction",
+      "description": "The Order of Abzu is a religious faction that originated from the first colonists on the oceanic planet Abzu, where they became attuned to the mysterious 'Current' — a harmonic resonance between consciousness and the ocean. They believe that all water, including blood, is interconnected and preach against pollution and exploitation of life, viewing such actions as blasphemy. With coral monasteries and a silent infiltration of various systems, their influence has grown, blending mysticism with ecological activism.",
+      "isUpdate": false,
+      "relatedTopics": [
+        "Abzu",
+        "Concord of Systems"
+      ],
+      "id": "1761442683242",
+      "createdAt": "2025-10-26T01:38:03.242Z",
+      "createdBy": "tsarra_nade"
     }
   ]
 }
