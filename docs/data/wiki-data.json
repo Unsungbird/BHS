@@ -73,10 +73,23 @@
       "description": "Centauri is Humanity's first interstellar civilization, serving as the core node in the intersystem trade web. It is renowned for its expertise in shipbuilding and is home to three stars: Alpha Centauri A, Alpha Centauri B, and Proxima Centauri.",
       "isUpdate": false,
       "relatedTopics": [
-        "Proxima B"
+        "Proxima B",
+        "Alpha Centauri A"
       ],
       "id": "1761439373309",
       "createdAt": "2025-10-26T00:42:53.309Z",
+      "createdBy": "tsarra_nade"
+    },
+    {
+      "name": "Alpha Centauri A",
+      "category": "Star",
+      "description": "Alpha Centauri A is a G-Type sun-like star located in the Centauri system. It is one of the three major stars in this system and serves as the host star for the planet Centauria, known for its stable conditions and potential for supporting life. This star plays a crucial role in the dynamics of the system, influencing both celestial and planetary behaviors.",
+      "isUpdate": false,
+      "relatedTopics": [
+        "Centauri"
+      ],
+      "id": "1761439902892",
+      "createdAt": "2025-10-26T00:51:42.892Z",
       "createdBy": "tsarra_nade"
     }
   ]
