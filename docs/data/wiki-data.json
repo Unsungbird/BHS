@@ -461,6 +461,19 @@
       "id": "1761442683242",
       "createdAt": "2025-10-26T01:38:03.242Z",
       "createdBy": "tsarra_nade"
+    },
+    {
+      "name": "Collapse of Earth",
+      "category": "Lore",
+      "description": "The Collapse of Earth marks a dark turning point in humanity's history, culminating in 2147 with the Great Dimming, a catastrophic failure of Earth's orbital infrastructure that left the planet unable to sustain life. As governments and economies crumbled, the rich fled to the stars, followed by the Hermes Initiative's desperate attempt to preserve humanity through cryogenic vessels sent to neighboring systems. With Earth's fate shrouded in uncertainty, claims of corporate warlords and a darkened world obscure the truth of what remains.",
+      "isUpdate": false,
+      "relatedTopics": [
+        "Earth",
+        "Hermes Initiative"
+      ],
+      "id": "1761489038322",
+      "createdAt": "2025-10-26T14:30:38.322Z",
+      "createdBy": "tsarra_nade"
     }
   ]
 }
