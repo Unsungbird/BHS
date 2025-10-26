@@ -270,6 +270,19 @@
       "id": "1761441762297",
       "createdAt": "2025-10-26T01:22:42.297Z",
       "createdBy": "tsarra_nade"
+    },
+    {
+      "name": "Helgardh",
+      "category": "Planet",
+      "description": "Helgardh is a rogue planet orbiting Barnard's Star. Its thick atmosphere and pervasive volcanic activity create a warm environment, providing warmth even in the frigid expanse of deep space. This unique planet presents an intriguing case for exploration within the Barnard system.",
+      "isUpdate": true,
+      "relatedTopics": [
+        "Barnard",
+        "Barnard's Star"
+      ],
+      "id": "1761441850245",
+      "createdAt": "2025-10-26T01:24:10.245Z",
+      "createdBy": "tsarra_nade"
     }
   ]
 }
