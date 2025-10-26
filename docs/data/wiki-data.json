@@ -474,6 +474,19 @@
       "id": "1761489038322",
       "createdAt": "2025-10-26T14:30:38.322Z",
       "createdBy": "tsarra_nade"
+    },
+    {
+      "name": "Hermes Initiative",
+      "category": "Lore",
+      "description": "The Hermes Initiative emerged as a global coalition of scientists, engineers, and survivalists committed to preserving human life as Earth faced catastrophic decline. They constructed massive automated ships known as Arks, designed for one-way travel, to carry carefully selected passengers into the cosmos, seeking new habitable planets and opportunities for survival. Launched in 2151, the Initiative's missions varied, some aimed at known planets like Proxima B, while others ventured into uncharted territories, planting the seeds for future colonization.",
+      "isUpdate": false,
+      "relatedTopics": [
+        "Proxima B",
+        "Earth"
+      ],
+      "id": "1761489083140",
+      "createdAt": "2025-10-26T14:31:23.140Z",
+      "createdBy": "tsarra_nade"
     }
   ]
 }
