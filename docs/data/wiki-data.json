@@ -434,6 +434,20 @@
       "id": "1761442627281",
       "createdAt": "2025-10-26T01:37:07.281Z",
       "createdBy": "tsarra_nade"
+    },
+    {
+      "name": "Nunet Syndicate",
+      "category": "Faction",
+      "description": "The Nunet Syndicate is a powerful constellation of families and cartels operating beneath the icy crust of Nunet in the Wolf 359 system. They specialize in splicing, harvesting, and trading in the biological riches of the Leviathan-serpents that inhabit the ocean depths, including regenerative medical serums and living DNA. Operating outside the law, the Syndics hold court in bioluminescent caverns and influence both rebel cells and Concord governance through their immense wealth.",
+      "isUpdate": true,
+      "relatedTopics": [
+        "Nunet",
+        "Wolf 359",
+        "Concord of Systems"
+      ],
+      "id": "1761442658921",
+      "createdAt": "2025-10-26T01:37:38.921Z",
+      "createdBy": "tsarra_nade"
     }
   ]
 }
