@@ -248,6 +248,18 @@
       "id": "1761441466574",
       "createdAt": "2025-10-26T01:17:46.574Z",
       "createdBy": "tsarra_nade"
+    },
+    {
+      "name": "Ymir's Garden",
+      "category": "Moon",
+      "description": "Ymir's Garden is a moon of Mjolnir, characterized by its warm environment resulting from gravitational pull and geothermal activity. The surface of Ymir's Garden is perpetually cloaked in a dense fog that has been captured from Mjolnir, creating a unique atmospheric condition.",
+      "isUpdate": false,
+      "relatedTopics": [
+        "Mjolnir"
+      ],
+      "id": "1761441530268",
+      "createdAt": "2025-10-26T01:18:50.268Z",
+      "createdBy": "tsarra_nade"
     }
   ]
 }
