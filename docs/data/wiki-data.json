@@ -193,6 +193,16 @@
       "id": "1761441076784",
       "createdAt": "2025-10-26T01:11:16.784Z",
       "createdBy": "tsarra_nade"
+    },
+    {
+      "name": "Nunet",
+      "category": "Planet",
+      "description": "Nunet is an enigmatic world known as the next frontier, characterized by its frozen oceans that are ruled by massive leviathan-like serpents. The dark icy crust of this planet holds many secrets, waiting to be uncovered by intrepid explorers.",
+      "isUpdate": false,
+      "relatedTopics": [],
+      "id": "1761441129671",
+      "createdAt": "2025-10-26T01:12:09.671Z",
+      "createdBy": "tsarra_nade"
     }
   ]
 }
