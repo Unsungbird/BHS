@@ -88,7 +88,8 @@
       "description": "Alpha Centauri A is a G-Type sun-like star located in the Centauri system. It is one of the three major stars in this system and serves as the host star for the planet Centauria, known for its stable conditions and potential for supporting life. This star plays a crucial role in the dynamics of the system, influencing both celestial and planetary behaviors.",
       "isUpdate": false,
       "relatedTopics": [
-        "Centauri"
+        "Centauri",
+        "Centauria"
       ],
       "id": "1761439902892",
       "createdAt": "2025-10-26T00:51:42.892Z",
@@ -119,6 +120,19 @@
       ],
       "id": "1761440222904",
       "createdAt": "2025-10-26T00:57:02.904Z",
+      "createdBy": "tsarra_nade"
+    },
+    {
+      "name": "Centauria",
+      "category": "Planet",
+      "description": "Centauria, the first intergalactic planet, boasts an Earth-like climate and hosts advanced photosynthetic life. It features tides that are occasionally interrupted by the orbit of Centauri B, and its unique ecosystems produce significantly more oxygen than Earth.",
+      "isUpdate": false,
+      "relatedTopics": [
+        "Centauri",
+        "Alpha Centauri B"
+      ],
+      "id": "1761440349175",
+      "createdAt": "2025-10-26T00:59:09.175Z",
       "createdBy": "tsarra_nade"
     }
   ]
