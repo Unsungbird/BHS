@@ -66,6 +66,18 @@
       "id": "1761438399828",
       "createdAt": "2025-10-26T00:26:39.828Z",
       "createdBy": "tsarra_nade"
+    },
+    {
+      "name": "Centauri",
+      "category": "System",
+      "description": "Centauri is Humanity's first interstellar civilization, serving as the core node in the intersystem trade web. It is renowned for its expertise in shipbuilding and is home to three stars: Alpha Centauri A, Alpha Centauri B, and Proxima Centauri.",
+      "isUpdate": false,
+      "relatedTopics": [
+        "Proxima B"
+      ],
+      "id": "1761439373309",
+      "createdAt": "2025-10-26T00:42:53.309Z",
+      "createdBy": "tsarra_nade"
     }
   ]
 }
