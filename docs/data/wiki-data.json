@@ -287,11 +287,23 @@
     {
       "name": "Luhman",
       "category": "System",
-      "description": "Luhman is a star system that includes the binary star pair Luhman 16 A and Luhman 16 B, which are located approximately 6.5 light years away from Earth in the constellation of Volans. This system is notable for harboring multiple exoplanets, making it a subject of interest for astrophysics and astrobiology. Its proximity to our own Solar System provides a valuable opportunity for future exploratory missions and studies regarding potential life beyond Earth.",
+      "description": "Luhman is a star system that includes the binary star pair Luhman 16 A and Luhman 16 B. This system is notable for harboring multiple exoplanets, making it a subject of interest for astrophysics and astrobiology. It is known as Mankind's library. Aims for eons of preservation.",
       "isUpdate": false,
       "relatedTopics": [],
       "id": "1761442003030",
       "createdAt": "2025-10-26T01:26:43.030Z",
+      "createdBy": "tsarra_nade"
+    },
+    {
+      "name": "Ninlil's Band",
+      "category": "Planet",
+      "description": "Ninlil's Band is a unique exoplanet tidally locked to Luhman 16A. Its thick atmosphere ensures even distribution of heat, while dense cloud cover protects the surface from harmful radiation. Notably, the planet hosts the Library of Literature, a renowned repository of knowledge and culture.",
+      "isUpdate": false,
+      "relatedTopics": [
+        "Luhman"
+      ],
+      "id": "1761442119194",
+      "createdAt": "2025-10-26T01:28:39.194Z",
       "createdBy": "tsarra_nade"
     }
   ]
