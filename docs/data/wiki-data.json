@@ -395,6 +395,19 @@
       "id": "1761442518066",
       "createdAt": "2025-10-26T01:35:18.066Z",
       "createdBy": "tsarra_nade"
+    },
+    {
+      "name": "House Heliograss",
+      "category": "Faction",
+      "description": "House Heliograss is a powerful dynasty that emerged from the descendants of the survivors of Sagan's Reach on the moon Heliograss, known for its shipbuilding prowess and dynastic culture. They have built their wealth and influence through the construction of fleets that serve both commerce and war, while navigating a landscape of political intrigue, where marriage and betrayal define their social structures. Despite their opulent facade, guilt lingers over the cost of their fortune, rooted in the lives of the first colonists who perished in the harsh environment of Heliograss.",
+      "isUpdate": true,
+      "relatedTopics": [
+        "Heliograss",
+        "Concord of Systems"
+      ],
+      "id": "1761442575978",
+      "createdAt": "2025-10-26T01:36:15.978Z",
+      "createdBy": "tsarra_nade"
     }
   ]
 }
