@@ -180,6 +180,19 @@
       "id": "1761440975089",
       "createdAt": "2025-10-26T01:09:35.089Z",
       "createdBy": "tsarra_nade"
+    },
+    {
+      "name": "Duat's Eye",
+      "category": "Station",
+      "description": "Duat's Eye is a sanctuary for deep space travelers, serving as the only modernity within the Wolf System. This unique station orbits in the Lagrange point between Wolf 359 and Shu, providing a crucial waypoint for those journeying through the vastness of space.",
+      "isUpdate": false,
+      "relatedTopics": [
+        "Wolf 359",
+        "Shu"
+      ],
+      "id": "1761441076784",
+      "createdAt": "2025-10-26T01:11:16.784Z",
+      "createdBy": "tsarra_nade"
     }
   ]
 }
