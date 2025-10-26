@@ -36,8 +36,13 @@ function saveWikiData(data) {
 }
 
 // Process wiki entry with ChatGPT
-async function processWikiEntry(content, existingEntries) {
+async function processWikiEntry(content, existingEntries, userCategory = null) {
   const existingNames = existingEntries.map(e => e.name);
+  
+  const categoryInstruction = userCategory 
+    ? `The user has specified the category as: ${userCategory}. Use this category.`
+    : `Categorize it as one of: Location, NPC, Item, Lore, Event, Faction, Moon, Planet, System, Station, Ship, Species, Organization, Technology, or Other`;
+  
   const prompt = `You are a helpful assistant that processes TTRPG world-building information for a wiki.
 
 Given the following information: "${content}"
@@ -46,7 +51,7 @@ Existing wiki entry names: ${JSON.stringify(existingNames)}
 
 Please:
 1. Extract the main subject/topic name
-2. Categorize it (Location, NPC, Item, Lore, Event, Faction, or Other)
+2. ${categoryInstruction}
 3. Write a clean, wiki-style description (2-4 sentences)
 4. Check if this topic already exists in the wiki. If it does, indicate you're updating it.
 5. IMPORTANT: Identify any mentions of existing wiki entries in your description and list them in relatedTopics. Look for exact matches (case-insensitive) of entry names that appear in the description.
@@ -54,7 +59,7 @@ Please:
 Respond in JSON format:
 {
   "name": "Topic Name",
-  "category": "Category",
+  "category": "${userCategory || 'Category'}",
   "description": "Clean description here",
   "isUpdate": false,
   "relatedTopics": ["ExistingEntry1", "ExistingEntry2"]
@@ -85,7 +90,7 @@ client.on('messageCreate', async (message) => {
     const content = message.content.slice(6).trim();
 
     if (!content) {
-      return message.reply('❌ Please provide content after `!wiki`. Example: `!wiki Location Waterdeep is a bustling port city`');
+      return message.reply('❌ Please provide content after `!wiki`.\n\n**Format:** `!wiki [Category] [Name] [Description]`\n**Example:** `!wiki Moon Heliograss A habitable moon with bioluminescent forests`\n\nOr use old format: `!wiki [any content]` and AI will categorize it.');
     }
 
     try {
@@ -95,8 +100,25 @@ client.on('messageCreate', async (message) => {
       // Load existing data
       const wikiData = loadWikiData();
 
+      // Parse the command - check if first word is a category
+      const parts = content.split(' ');
+      let userCategory = null;
+      let restOfContent = content;
+      
+      // List of valid categories
+      const validCategories = ['Location', 'NPC', 'Item', 'Lore', 'Event', 'Faction', 'Moon', 'Planet', 'System', 'Station', 'Ship', 'Species', 'Organization', 'Technology', 'Other'];
+      
+      // Check if first word matches a category (case-insensitive)
+      if (parts.length > 1) {
+        const potentialCategory = parts[0].charAt(0).toUpperCase() + parts[0].slice(1).toLowerCase();
+        if (validCategories.includes(potentialCategory)) {
+          userCategory = potentialCategory;
+          restOfContent = parts.slice(1).join(' ');
+        }
+      }
+
       // Process with ChatGPT
-      const processed = await processWikiEntry(content, wikiData.entries);
+      const processed = await processWikiEntry(restOfContent, wikiData.entries, userCategory);
 
       // Check if entry exists
       const existingIndex = wikiData.entries.findIndex(
@@ -135,12 +157,16 @@ client.on('messageCreate', async (message) => {
   if (message.content === '!wiki-help') {
     message.reply(`📚 **TTRPG Wiki Bot Commands**
 
-\`!wiki [content]\` - Add or update a wiki entry
-Example: \`!wiki NPC Gandor is a sketchy merchant in Waterdeep\`
+\`!wiki [Category] [Name] [Description]\` - Add entry with specific category
+Example: \`!wiki Moon Heliograss A habitable moon with forests\`
+
+\`!wiki [content]\` - Add entry (AI chooses category)
+Example: \`!wiki Gandor is a sketchy merchant\`
+
+**Valid Categories:**
+Location, NPC, Item, Lore, Event, Faction, Moon, Planet, System, Station, Ship, Species, Organization, Technology, Other
 
 \`!wiki-search [term]\` - Search for wiki entries
-Example: \`!wiki-search Waterdeep\`
-
 \`!wiki-stats\` - Show wiki statistics
 \`!wiki-help\` - Show this help message`);
   }
@@ -212,4 +238,3 @@ Use \`!wiki-search [exact name]\` to see details.`);
 
 // Login to Discord
 client.login(process.env.DISCORD_BOT_TOKEN);
-

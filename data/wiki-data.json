@@ -2,7 +2,7 @@
   "entries": [
     {
       "name": "Proxima B",
-      "category": "Location",
+      "category": "Planet",
       "description": "Proxima B is a tidally locked planet located in the habitable zone of its star, offering suitable conditions for life. Its unique position results in one side perpetually facing the star and the other shrouded in darkness, creating diverse ecological zones and climatic conditions. This Goldilocks planet hosts various ecosystems and potentially intelligent life forms, making it a significant location for exploration and adventure.",
       "isUpdate": false,
       "relatedTopics": [],
@@ -12,12 +12,59 @@
     },
     {
       "name": "Heliograss",
-      "category": "Location",
+      "category": "Moon",
       "description": "Heliograss is a habitable moon orbiting an inhospitable gas giant. Characterized by reflective clouds and wide temperate zones, it features giant bioluminescent forests that support diverse life forms. The strong magnetic field of the moon mitigates the effects of solar flares, creating a stable environment for ecosystems to thrive.",
       "isUpdate": false,
       "relatedTopics": [],
       "id": "1761425261203",
       "createdAt": "2025-10-25T20:47:41.203Z",
+      "createdBy": "tsarra_nade"
+    },
+    {
+      "name": "Sun System",
+      "category": "Solar System",
+      "description": "The Sun System is the birthplace of mankind, now characterized by stark social divides. Aristocrats indulge in the remaining wealth of a deteriorating planet, while the impoverished struggle for survival, unable to afford escape from the harsh conditions of their home world.",
+      "isUpdate": false,
+      "relatedTopics": [],
+      "id": "1761429141382",
+      "createdAt": "2025-10-25T21:52:21.382Z",
+      "createdBy": "tsarra_nade"
+    },
+    {
+      "name": "Venus",
+      "category": "Planet",
+      "description": "Venus is a hellish world characterized by its harsh surface conditions and extreme temperatures. Despite this, it hosts a series of floating cities that represent the ingenuity of life in this hostile environment. It orbits the Sun System, contributing to the unique dynamics of the solar structure.",
+      "isUpdate": false,
+      "relatedTopics": [
+        "Sun System"
+      ],
+      "id": "1761429680095",
+      "createdAt": "2025-10-25T22:01:20.095Z",
+      "createdBy": "tsarra_nade"
+    },
+    {
+      "name": "Earth",
+      "category": "Planet",
+      "description": "Earth is the ancestral home of all mankind, orbiting the Sun System. Once vibrant and full of life, it is now nearly desolate due to environmental disasters and economic collapse. Despite its dire state, Earth is slowly repopulating with familiar beasts, embodying a resilience that ensures it can never truly die, even as it remains too doomed to prosper.",
+      "isUpdate": false,
+      "relatedTopics": [
+        "Sun System"
+      ],
+      "id": "1761438343634",
+      "createdAt": "2025-10-26T00:25:43.634Z",
+      "createdBy": "tsarra_nade"
+    },
+    {
+      "name": "Mars",
+      "category": "Planet",
+      "description": "Mars is a near-completely terraformed planet orbiting the Sun System. Warmed by artificial greenhouse gases, it showcases advanced terraforming technology that allows it to support life and sustain an ecosystem similar to Earth.",
+      "isUpdate": false,
+      "relatedTopics": [
+        "Sun System",
+        "Earth"
+      ],
+      "id": "1761438399828",
+      "createdAt": "2025-10-26T00:26:39.828Z",
       "createdBy": "tsarra_nade"
     }
   ]
