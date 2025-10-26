@@ -240,5 +240,22 @@ setInterval(() => {
     loadWikiData();
 }, 30000);
 
+// Theme switching
+function switchTheme(theme) {
+    document.documentElement.setAttribute('data-theme', theme);
+    localStorage.setItem('wiki-theme', theme);
+    
+    // Update active button
+    document.querySelectorAll('.theme-btn').forEach(btn => {
+        btn.classList.toggle('active', btn.dataset.theme === theme);
+    });
+}
+
+// Load saved theme
+const savedTheme = localStorage.getItem('wiki-theme') || 'default';
+if (savedTheme !== 'default') {
+    switchTheme(savedTheme);
+}
+
 // Initialize on page load
 loadWikiData();
