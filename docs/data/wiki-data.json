@@ -330,6 +330,18 @@
       "id": "1761442242397",
       "createdAt": "2025-10-26T01:30:42.397Z",
       "createdBy": "tsarra_nade"
+    },
+    {
+      "name": "Abzu",
+      "category": "Planet",
+      "description": "Abzu is a giant ocean world orbiting Luhman 16B, renowned for being a comprehensive library of all of Mankind's gathered sea creatures. The planet is kept warm by the tidal forces, creating a unique and thriving marine ecosystem.",
+      "isUpdate": false,
+      "relatedTopics": [
+        "Luhman 16B"
+      ],
+      "id": "1761442293442",
+      "createdAt": "2025-10-26T01:31:33.442Z",
+      "createdBy": "tsarra_nade"
     }
   ]
 }
