@@ -305,6 +305,19 @@
       "id": "1761442119194",
       "createdAt": "2025-10-26T01:28:39.194Z",
       "createdBy": "tsarra_nade"
+    },
+    {
+      "name": "Mirage",
+      "category": "Planet",
+      "description": "Mirage is a gas giant located in orbit around Luhman 16A, notable for hosting the renowned library known as 'Enlil's Mantle.' This library serves as the comprehensive repository of all of mankind's industrial knowledge. Floating cities within Mirage’s breathable-pressure layer leverage wind turbines and fusion reactors for their power needs.",
+      "isUpdate": false,
+      "relatedTopics": [
+        "Luhman",
+        "Enlil's Mantle"
+      ],
+      "id": "1761442184909",
+      "createdAt": "2025-10-26T01:29:44.909Z",
+      "createdBy": "tsarra_nade"
     }
   ]
 }
