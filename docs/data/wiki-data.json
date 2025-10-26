@@ -158,6 +158,18 @@
       "id": "1761440820213",
       "createdAt": "2025-10-26T01:07:00.213Z",
       "createdBy": "tsarra_nade"
+    },
+    {
+      "name": "Ra's Path",
+      "category": "Planet",
+      "description": "Ra's Path is a tidally locked desert world orbiting the star Wolf 359. The planet features a stark contrast, with one side perpetually scorched by the sun and the other in eternal cold. Survivors of a catastrophic event have colonized the narrow 'terminator band,' where conditions are more hospitable for life.",
+      "isUpdate": false,
+      "relatedTopics": [
+        "Wolf 359"
+      ],
+      "id": "1761440880718",
+      "createdAt": "2025-10-26T01:08:00.718Z",
+      "createdBy": "tsarra_nade"
     }
   ]
 }
