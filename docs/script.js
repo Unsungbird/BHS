@@ -43,15 +43,37 @@ async function loadWikiData() {
 function initializeFilters() {
     const categories = ['all', ...new Set(wikiData.entries.map(e => e.category))];
     
-    categoryFilters.innerHTML = categories.map(cat => `
-        <button 
-            class="filter-btn ${cat === 'all' ? 'active' : ''}" 
-            data-category="${cat}"
-            onclick="filterByCategory('${cat}')"
-        >
-            ${cat.charAt(0).toUpperCase() + cat.slice(1)}
-        </button>
-    `).join('');
+    // Define category groups
+    const categoryGroups = [
+        ['all'],
+        ['NPC', 'Faction', 'Ship', 'Species', 'Organization'],
+        ['Moon', 'Planet', 'System', 'Station', 'Location'],
+        ['Lore', 'Event', 'Technology', 'Item', 'Other']
+    ];
+    
+    // Build filter HTML with dividers
+    let filterHTML = '';
+    categoryGroups.forEach((group, groupIndex) => {
+        const groupCategories = group.filter(cat => categories.includes(cat));
+        if (groupCategories.length > 0) {
+            if (groupIndex > 0) {
+                filterHTML += '<div class="filter-divider"></div>';
+            }
+            groupCategories.forEach(cat => {
+                filterHTML += `
+                    <button 
+                        class="filter-btn ${cat === 'all' ? 'active' : ''}" 
+                        data-category="${cat}"
+                        onclick="filterByCategory('${cat}')"
+                    >
+                        ${cat.charAt(0).toUpperCase() + cat.slice(1)}
+                    </button>
+                `;
+            });
+        }
+    });
+    
+    categoryFilters.innerHTML = filterHTML;
 }
 
 // Update statistics

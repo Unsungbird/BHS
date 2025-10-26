@@ -82,6 +82,14 @@ body {
     display: flex;
     gap: 0.75rem;
     flex-wrap: wrap;
+    align-items: center;
+}
+
+.filter-divider {
+    width: 2px;
+    height: 30px;
+    background: var(--border);
+    margin: 0 0.5rem;
 }
 
 .filter-btn {
