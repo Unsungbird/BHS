@@ -342,6 +342,19 @@
       "id": "1761442293442",
       "createdAt": "2025-10-26T01:31:33.442Z",
       "createdBy": "tsarra_nade"
+    },
+    {
+      "name": "Nammu's Eye",
+      "category": "Station",
+      "description": "Nammu's Eye is a rotating space station positioned at a Lagrange point between Alpha Centauri A and Alpha Centauri B. Serving as a vital hub for intergalactic communication, it facilitates advanced connections across vast distances. The station also features a FTL Ferry Dock, making it a crucial waypoint for travelers in the region.",
+      "isUpdate": false,
+      "relatedTopics": [
+        "Alpha Centauri A",
+        "Alpha Centauri B"
+      ],
+      "id": "1761442331447",
+      "createdAt": "2025-10-26T01:32:11.447Z",
+      "createdBy": "tsarra_nade"
     }
   ]
 }
