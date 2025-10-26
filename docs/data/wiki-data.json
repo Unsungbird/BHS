@@ -346,14 +346,28 @@
     {
       "name": "Nammu's Eye",
       "category": "Station",
-      "description": "Nammu's Eye is a rotating space station positioned at a Lagrange point between Alpha Centauri A and Alpha Centauri B. Serving as a vital hub for intergalactic communication, it facilitates advanced connections across vast distances. The station also features a FTL Ferry Dock, making it a crucial waypoint for travelers in the region.",
+      "description": "Nammu's Eye is a rotating space station positioned at a Lagrange point between Luhman 16A and 16B. Serving as a vital hub for intergalactic communication, it facilitates advanced connections across vast distances. The station also features a FTL Ferry Dock, making it a crucial waypoint for travelers in the region.",
       "isUpdate": false,
       "relatedTopics": [
-        "Alpha Centauri A",
-        "Alpha Centauri B"
+        "Luhman"
       ],
       "id": "1761442331447",
       "createdAt": "2025-10-26T01:32:11.447Z",
+      "createdBy": "tsarra_nade"
+    },
+    {
+      "name": "Concord of Systems",
+      "category": "Faction",
+      "description": "The Concord of Systems is a powerful faction born from the Unity Accords, originally formed to maintain interstellar connections among humanity's colonies. Transitioning from a cooperative alliance to a dominion, it is now known for its bureaucratic rule, where governors wield significant power akin to kings, and the original ideals of unity have given way to control and occupation. Despite this, many worlds continue to prosper under its flag, while resentment brews among the ruled populations.",
+      "isUpdate": false,
+      "relatedTopics": [
+        "Proxima Station",
+        "Centauria",
+        "Luhman",
+        "Barnard"
+      ],
+      "id": "1761442449472",
+      "createdAt": "2025-10-26T01:34:09.472Z",
       "createdBy": "tsarra_nade"
     }
   ]
