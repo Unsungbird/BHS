@@ -75,7 +75,8 @@
       "relatedTopics": [
         "Proxima B",
         "Alpha Centauri A",
-        "Alpha Centauri B"
+        "Alpha Centauri B",
+        "Proxima Centauri"
       ],
       "id": "1761439373309",
       "createdAt": "2025-10-26T00:42:53.309Z",
@@ -105,6 +106,19 @@
       ],
       "id": "1761440051775",
       "createdAt": "2025-10-26T00:54:11.775Z",
+      "createdBy": "tsarra_nade"
+    },
+    {
+      "name": "Proxima Centauri",
+      "category": "Star",
+      "description": "Proxima Centauri is an M-Type red dwarf star and the smallest and faintest of the three Centauri stars. It is known primarily as the host of Proxima B, a nearby exoplanet, and Proxima Station, an important outpost for exploration and research in the region.",
+      "isUpdate": false,
+      "relatedTopics": [
+        "Proxima B",
+        "Centauri"
+      ],
+      "id": "1761440222904",
+      "createdAt": "2025-10-26T00:57:02.904Z",
       "createdBy": "tsarra_nade"
     }
   ]
