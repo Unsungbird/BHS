@@ -424,6 +424,16 @@
       "id": "1761442602199",
       "createdAt": "2025-10-26T01:36:42.199Z",
       "createdBy": "tsarra_nade"
+    },
+    {
+      "name": "Aegis Fleet",
+      "category": "Faction",
+      "description": "The Aegis Fleet is a mercenary organization that arose from a coalition of veteran captains during the chaotic early days of interstellar colonization. Initially formed to protect trade routes from pirates and predators, they gained notoriety for their valor and honor. However, as the Concord rose to power, the Fleet became a paid force, compromising their principles for contracts and credits. Despite their shift towards mercenarism, they remain a crucial presence in the void, often invoked by those in need of protection amidst the dangers of space.",
+      "isUpdate": false,
+      "relatedTopics": [],
+      "id": "1761442627281",
+      "createdAt": "2025-10-26T01:37:07.281Z",
+      "createdBy": "tsarra_nade"
     }
   ]
 }
