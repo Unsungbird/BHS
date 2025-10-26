@@ -116,7 +116,8 @@
       "isUpdate": false,
       "relatedTopics": [
         "Proxima B",
-        "Centauri"
+        "Centauri",
+        "Proxima Station"
       ],
       "id": "1761440222904",
       "createdAt": "2025-10-26T00:57:02.904Z",
@@ -133,6 +134,19 @@
       ],
       "id": "1761440349175",
       "createdAt": "2025-10-26T00:59:09.175Z",
+      "createdBy": "tsarra_nade"
+    },
+    {
+      "name": "Proxima Station",
+      "category": "Station",
+      "description": "Proxima Station is a slipframe assembly station that produces ships capable of faster-than-light ferrying. It is a kilometer-long synthetic world and hosts the first dock for faster-than-light ferries, serving as a crucial hub in space travel.",
+      "isUpdate": false,
+      "relatedTopics": [
+        "Proxima B",
+        "Proxima Centauri"
+      ],
+      "id": "1761440447000",
+      "createdAt": "2025-10-26T01:00:47.000Z",
       "createdBy": "tsarra_nade"
     }
   ]
