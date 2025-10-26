@@ -318,6 +318,18 @@
       "id": "1761442184909",
       "createdAt": "2025-10-26T01:29:44.909Z",
       "createdBy": "tsarra_nade"
+    },
+    {
+      "name": "Ereshkigal",
+      "category": "Planet",
+      "description": "Ereshkigal is a garden of Eden-like planet that was once a drifting celestial body. It has been captured by the gravity of Luhman 16A and now serves as a unique library housing all of mankind's gathered seeds and plants. This verdant realm represents a convergence of nature and knowledge, embodying the hopes of preserving Earth's biological heritage.",
+      "isUpdate": false,
+      "relatedTopics": [
+        "Luhman"
+      ],
+      "id": "1761442242397",
+      "createdAt": "2025-10-26T01:30:42.397Z",
+      "createdBy": "tsarra_nade"
     }
   ]
 }
