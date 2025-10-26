@@ -22,7 +22,7 @@
     },
     {
       "name": "Sun System",
-      "category": "Solar System",
+      "category": "System",
       "description": "The Sun System is the birthplace of mankind, now characterized by stark social divides. Aristocrats indulge in the remaining wealth of a deteriorating planet, while the impoverished struggle for survival, unable to afford escape from the harsh conditions of their home world.",
       "isUpdate": false,
       "relatedTopics": [],
@@ -40,6 +40,31 @@
       ],
       "id": "1761429680095",
       "createdAt": "2025-10-25T22:01:20.095Z",
+      "createdBy": "tsarra_nade"
+    },
+    {
+      "name": "Earth",
+      "category": "Planet",
+      "description": "Earth is the ancestral home of all mankind, orbiting the Sun System. Once vibrant and full of life, it is now nearly desolate due to environmental disasters and economic collapse. Despite its dire state, Earth is slowly repopulating with familiar beasts, embodying a resilience that ensures it can never truly die, even as it remains too doomed to prosper.",
+      "isUpdate": false,
+      "relatedTopics": [
+        "Sun System"
+      ],
+      "id": "1761438343634",
+      "createdAt": "2025-10-26T00:25:43.634Z",
+      "createdBy": "tsarra_nade"
+    },
+    {
+      "name": "Mars",
+      "category": "Planet",
+      "description": "Mars is a near-completely terraformed planet orbiting the Sun System. Warmed by artificial greenhouse gases, it showcases advanced terraforming technology that allows it to support life and sustain an ecosystem similar to Earth.",
+      "isUpdate": false,
+      "relatedTopics": [
+        "Sun System",
+        "Earth"
+      ],
+      "id": "1761438399828",
+      "createdAt": "2025-10-26T00:26:39.828Z",
       "createdBy": "tsarra_nade"
     }
   ]
