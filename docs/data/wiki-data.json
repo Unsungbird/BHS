@@ -74,7 +74,8 @@
       "isUpdate": false,
       "relatedTopics": [
         "Proxima B",
-        "Alpha Centauri A"
+        "Alpha Centauri A",
+        "Alpha Centauri B"
       ],
       "id": "1761439373309",
       "createdAt": "2025-10-26T00:42:53.309Z",
@@ -90,6 +91,20 @@
       ],
       "id": "1761439902892",
       "createdAt": "2025-10-26T00:51:42.892Z",
+      "createdBy": "tsarra_nade"
+    },
+    {
+      "name": "Alpha Centauri B",
+      "category": "Star",
+      "description": "Alpha Centauri B is a K-Type dimmer sun-like star that serves as the host for a large inhospitable gas giant. This gas giant is orbited by the moon Heliograss, contributing to the diverse celestial dynamics of the Sun System. The star's properties make it a subject of interest for explorations in the Centauri region.",
+      "isUpdate": false,
+      "relatedTopics": [
+        "Heliograss",
+        "Sun System",
+        "Centauri"
+      ],
+      "id": "1761440051775",
+      "createdAt": "2025-10-26T00:54:11.775Z",
       "createdBy": "tsarra_nade"
     }
   ]
