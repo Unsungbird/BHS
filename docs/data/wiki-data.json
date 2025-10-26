@@ -369,6 +369,19 @@
       "id": "1761442449472",
       "createdAt": "2025-10-26T01:34:09.472Z",
       "createdBy": "tsarra_nade"
+    },
+    {
+      "name": "Hermes Council",
+      "category": "Faction",
+      "description": "The Hermes Council is a powerful organization born from the remnants of humanity following the Collapse. Established aboard Nammu's Eye, this council acts as a neutral arbiter of knowledge and information, shaping the historical narrative and providing lost technologies to those in need. While revered as sages by some, they are seen as watchers and manipulators of truth by others, ensuring the survival of humanity's experiment through their archives and decisions.",
+      "isUpdate": false,
+      "relatedTopics": [
+        "Nammu's Eye",
+        "Concord of Systems"
+      ],
+      "id": "1761442483159",
+      "createdAt": "2025-10-26T01:34:43.159Z",
+      "createdBy": "tsarra_nade"
     }
   ]
 }
