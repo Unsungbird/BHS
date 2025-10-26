@@ -148,6 +148,16 @@
       "id": "1761440447000",
       "createdAt": "2025-10-26T01:00:47.000Z",
       "createdBy": "tsarra_nade"
+    },
+    {
+      "name": "Wolf 359",
+      "category": "System",
+      "description": "Wolf 359 is mankind's newest and most recent outpost located in the depths of the universe. Only the most hardy individuals can thrive here, relying heavily on their own survival skills and resourcefulness to navigate the challenges of this remote environment.",
+      "isUpdate": false,
+      "relatedTopics": [],
+      "id": "1761440820213",
+      "createdAt": "2025-10-26T01:07:00.213Z",
+      "createdBy": "tsarra_nade"
     }
   ]
 }
