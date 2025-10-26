@@ -203,6 +203,16 @@
       "id": "1761441129671",
       "createdAt": "2025-10-26T01:12:09.671Z",
       "createdBy": "tsarra_nade"
+    },
+    {
+      "name": "Barnard",
+      "category": "System",
+      "description": "Known as the Crucible of Progress, the Barnard System is currently experiencing a new industrial revolution, driven by its rich abundance of resources. This transformation is attracting attention from various sectors eager to harness the untapped potential of this prosperous system.",
+      "isUpdate": false,
+      "relatedTopics": [],
+      "id": "1761441261614",
+      "createdAt": "2025-10-26T01:14:21.614Z",
+      "createdBy": "tsarra_nade"
     }
   ]
 }
