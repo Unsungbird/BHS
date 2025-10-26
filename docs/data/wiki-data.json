@@ -403,7 +403,8 @@
       "isUpdate": true,
       "relatedTopics": [
         "Heliograss",
-        "Concord of Systems"
+        "Concord of Systems",
+        "Sagan's Reach"
       ],
       "id": "1761442575978",
       "createdAt": "2025-10-26T01:36:15.978Z",
@@ -486,6 +487,20 @@
       ],
       "id": "1761489083140",
       "createdAt": "2025-10-26T14:31:23.140Z",
+      "createdBy": "tsarra_nade"
+    },
+    {
+      "name": "Sagan's Reach",
+      "category": "Lore",
+      "description": "Sagan's Reach is the first generation ship launched by the Hermes Initiative, serving as a colossal Ark carrying humanity's hope beyond the dying Sol system. After emerging from cold sleep in orbit around Alpha Centauri A, it established the first permanent human colony in the Alpha Centauri system, centered on its hull's transformation into a sprawling station. Following initial successes, the colony faced a devastating superquake on the marginally habitable planet Thestis, leading settlers to migrate to the promising moon of Heliograss around the gas giant.",
+      "isUpdate": false,
+      "relatedTopics": [
+        "Alpha Centauri A",
+        "Heliograss",
+        "Hermes Initiative"
+      ],
+      "id": "1761489120083",
+      "createdAt": "2025-10-26T14:32:00.083Z",
       "createdBy": "tsarra_nade"
     }
   ]
