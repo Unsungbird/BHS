@@ -238,6 +238,16 @@
       "id": "1761441394029",
       "createdAt": "2025-10-26T01:16:34.029Z",
       "createdBy": "tsarra_nade"
+    },
+    {
+      "name": "Mjolnir's Eye",
+      "category": "Planet",
+      "description": "Mjolnir's Eye is the only outpost located on the gas giant Mjolnir. This Orbital Cloud City operates through advanced technologies, utilizing fusion power and atmospheric harvesting to sustain its unique environment and community.",
+      "isUpdate": false,
+      "relatedTopics": [],
+      "id": "1761441466574",
+      "createdAt": "2025-10-26T01:17:46.574Z",
+      "createdBy": "tsarra_nade"
     }
   ]
 }
