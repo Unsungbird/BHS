@@ -213,6 +213,18 @@
       "id": "1761441261614",
       "createdAt": "2025-10-26T01:14:21.614Z",
       "createdBy": "tsarra_nade"
+    },
+    {
+      "name": "Barnard's Star",
+      "category": "Location",
+      "description": "Barnard's Star is a very old red dwarf located in the Alpha Centauri system. It is characterized by its quiet, low-mass, and low-activity nature, which contributes significantly to the stability and reliability of the surrounding celestial environment.",
+      "isUpdate": true,
+      "relatedTopics": [
+        "Barnard"
+      ],
+      "id": "1761441301692",
+      "createdAt": "2025-10-26T01:15:01.692Z",
+      "createdBy": "tsarra_nade"
     }
   ]
 }
