@@ -170,6 +170,16 @@
       "id": "1761440880718",
       "createdAt": "2025-10-26T01:08:00.718Z",
       "createdBy": "tsarra_nade"
+    },
+    {
+      "name": "Shu",
+      "category": "Planet",
+      "description": "Shu is a barely habitable hydrogen gas giant that hosts Shu's Embrace, a series of sky platforms utilized for various purposes. The planet is home to Stormriders, who pilot extraction vessels to harvest the abundant hydrogen in its atmosphere. Despite its harsh conditions, the sky platforms allow for some degree of habitation and operation.",
+      "isUpdate": false,
+      "relatedTopics": [],
+      "id": "1761440975089",
+      "createdAt": "2025-10-26T01:09:35.089Z",
+      "createdBy": "tsarra_nade"
     }
   ]
 }
