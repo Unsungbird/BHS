@@ -502,21 +502,6 @@
       "id": "1761489120083",
       "createdAt": "2025-10-26T14:32:00.083Z",
       "createdBy": "tsarra_nade"
-    },
-    {
-      "name": "The First Among All",
-      "category": "Lore",
-      "description": "The First Among All is a significant title within the mythology of the Hermes Initiative, representing an ancient figure believed to have guided the early explorers of the Sun System. This mythological entity is considered a beacon of wisdom and strategy, embodying the ideals that shaped the exploration and settlement of systems like Proxima B and Centauri. Its influence is evident in the cultural practices of factions such as the House Heliograss and the Order of Abzu, which seek to honor its legacy in their pursuits.",
-      "isUpdate": true,
-      "relatedTopics": [
-        "Hermes Initiative",
-        "Proxima B",
-        "Centauri",
-        "House Heliograss",
-        "Order of Abzu"
-      ],
-      "updatedAt": "2025-10-27T14:17:49.588Z",
-      "updatedBy": "tsarra_nade"
     }
   ]
 }
