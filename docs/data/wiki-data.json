@@ -502,6 +502,18 @@
       "id": "1761489120083",
       "createdAt": "2025-10-26T14:32:00.083Z",
       "createdBy": "tsarra_nade"
+    },
+    {
+      "name": "The First Among All",
+      "category": "NPC",
+      "description": "The First Among All is the enigmatic leader of the Concord of Systems, having served in this role for the past thirty years. He is described as a handsome man in his mid-40s, with his ancestry appearing indeterminate; the residents of the Dominion perceive him as resembling themselves, a testament to effective propaganda. He maintains a private presence, meeting with advisors and officials behind closed doors, while holovids of his meetings and speeches are broadcasted across the Dominion.",
+      "isUpdate": false,
+      "relatedTopics": [
+        "Concord of Systems"
+      ],
+      "id": "1761574779360",
+      "createdAt": "2025-10-27T14:19:39.360Z",
+      "createdBy": "tsarra_nade"
     }
   ]
 }
