@@ -505,13 +505,18 @@
     },
     {
       "name": "The First Among All",
-      "category": "NPC",
-      "description": "The First Among All is the enigmatic leader of the Dominion of Unity, known for his charismatic presence and indeterminate ancestry. For thirty years, he has maintained a handsome, vivacious appearance in his mid-40s, with citizens perceiving him as a reflection of themselves—a testament to masterful propaganda. He never appears in public, conducting all meetings privately and utilizing holovids to communicate with the Dominion's populace.",
-      "isUpdate": false,
-      "relatedTopics": [],
-      "id": "1761574648496",
-      "createdAt": "2025-10-27T14:17:28.496Z",
-      "createdBy": "tsarra_nade"
+      "category": "Lore",
+      "description": "The First Among All is a significant title within the mythology of the Hermes Initiative, representing an ancient figure believed to have guided the early explorers of the Sun System. This mythological entity is considered a beacon of wisdom and strategy, embodying the ideals that shaped the exploration and settlement of systems like Proxima B and Centauri. Its influence is evident in the cultural practices of factions such as the House Heliograss and the Order of Abzu, which seek to honor its legacy in their pursuits.",
+      "isUpdate": true,
+      "relatedTopics": [
+        "Hermes Initiative",
+        "Proxima B",
+        "Centauri",
+        "House Heliograss",
+        "Order of Abzu"
+      ],
+      "updatedAt": "2025-10-27T14:17:49.588Z",
+      "updatedBy": "tsarra_nade"
     }
   ]
 }
