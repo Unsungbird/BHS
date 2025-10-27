@@ -514,6 +514,16 @@
       "id": "1761574779360",
       "createdAt": "2025-10-27T14:19:39.360Z",
       "createdBy": "tsarra_nade"
+    },
+    {
+      "name": "Tartarus I",
+      "category": "Ship",
+      "description": "The Tartarus I is a prison transport ship that has been transformed into a makeshift home for its occupants after suffering severe damage from a catastrophic accident. It hosts numerous cryospace chambers, housing individuals who were meant to be transported but now remain in stasis aboard the damaged vessel. The ship's current state presents both a challenge and an opportunity for those aboard as they navigate a precarious existence among the stars.",
+      "isUpdate": false,
+      "relatedTopics": [],
+      "id": "1761575725144",
+      "createdAt": "2025-10-27T14:35:25.144Z",
+      "createdBy": "tsarra_nade"
     }
   ]
 }
