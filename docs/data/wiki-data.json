@@ -584,6 +584,18 @@
       "id": "1761859159414",
       "createdAt": "2025-10-30T21:19:19.414Z",
       "createdBy": "tsarra_nade"
+    },
+    {
+      "name": "DF-112 Goblin",
+      "category": "Ship",
+      "description": "The DF-112 Goblin is the most advanced starfighter ship deployed by the Concord of Systems. Developed by the Design Bureau, it serves as the successor to the DF-107 ('Gator') and was introduced early in the Great Galactic War.",
+      "isUpdate": false,
+      "relatedTopics": [
+        "Concord of Systems"
+      ],
+      "id": "1761859993152",
+      "createdAt": "2025-10-30T21:33:13.152Z",
+      "createdBy": "tsarra_nade"
     }
   ]
 }
