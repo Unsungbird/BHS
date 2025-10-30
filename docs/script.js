@@ -2,6 +2,7 @@
 let wikiData = { entries: [] };
 let currentFilter = 'all';
 let searchTerm = '';
+let lastVisitTime = null;
 
 // DOM Elements
 const entriesGrid = document.getElementById('entriesGrid');
@@ -17,6 +18,9 @@ const modalBody = document.getElementById('modalBody');
 // Load wiki data
 async function loadWikiData() {
     try {
+        // Get last visit time from localStorage
+        lastVisitTime = localStorage.getItem('wiki-last-visit');
+        
         // Try to load from the data folder
         const response = await fetch('data/wiki-data.json');
         if (!response.ok) throw new Error('Data not found');
@@ -26,6 +30,9 @@ async function loadWikiData() {
         updateStats();
         renderEntries();
         updateLastSync();
+        
+        // Update last visit time to now
+        localStorage.setItem('wiki-last-visit', new Date().toISOString());
     } catch (error) {
         console.error('Error loading wiki data:', error);
         entriesGrid.innerHTML = `
@@ -43,9 +50,12 @@ async function loadWikiData() {
 function initializeFilters() {
     const categories = ['all', ...new Set(wikiData.entries.map(e => e.category))];
     
-    // Define category groups
+    // Count new entries
+    const newCount = countNewEntries();
+    
+    // Define category groups - add 'new' at the beginning
     const categoryGroups = [
-        ['all'],
+        newCount > 0 ? ['new', 'all'] : ['all'],
         ['NPC', 'Faction', 'Ship', 'Species', 'Organization'],
         ['Moon', 'Planet', 'System', 'Station', 'Location'],
         ['Lore', 'Event', 'Technology', 'Item', 'Other']
@@ -54,19 +64,23 @@ function initializeFilters() {
     // Build filter HTML with dividers
     let filterHTML = '';
     categoryGroups.forEach((group, groupIndex) => {
-        const groupCategories = group.filter(cat => categories.includes(cat));
+        const groupCategories = group.filter(cat => cat === 'new' || cat === 'all' || categories.includes(cat));
         if (groupCategories.length > 0) {
             if (groupIndex > 0) {
                 filterHTML += '<div class="filter-divider"></div>';
             }
             groupCategories.forEach(cat => {
+                const displayName = cat === 'new' 
+                    ? `New (${newCount})` 
+                    : cat.charAt(0).toUpperCase() + cat.slice(1);
+                    
                 filterHTML += `
                     <button 
-                        class="filter-btn ${cat === 'all' ? 'active' : ''}" 
+                        class="filter-btn ${cat === 'all' ? 'active' : ''} ${cat === 'new' ? 'new-filter' : ''}" 
                         data-category="${cat}"
                         onclick="filterByCategory('${cat}')"
                     >
-                        ${cat.charAt(0).toUpperCase() + cat.slice(1)}
+                        ${displayName}
                     </button>
                 `;
             });
@@ -74,6 +88,25 @@ function initializeFilters() {
     });
     
     categoryFilters.innerHTML = filterHTML;
+}
+
+// Count new entries since last visit
+function countNewEntries() {
+    if (!lastVisitTime) return 0;
+    
+    return wikiData.entries.filter(entry => {
+        const entryDate = new Date(entry.updatedAt || entry.createdAt);
+        const lastVisit = new Date(lastVisitTime);
+        return entryDate > lastVisit;
+    }).length;
+}
+
+// Check if entry is new
+function isNewEntry(entry) {
+    if (!lastVisitTime) return false;
+    const entryDate = new Date(entry.updatedAt || entry.createdAt);
+    const lastVisit = new Date(lastVisitTime);
+    return entryDate > lastVisit;
 }
 
 // Update statistics
@@ -106,7 +139,9 @@ function updateStats() {
 // Render entries
 function renderEntries() {
     const filteredEntries = wikiData.entries.filter(entry => {
-        const matchesCategory = currentFilter === 'all' || entry.category === currentFilter;
+        const matchesCategory = currentFilter === 'all' 
+            || currentFilter === 'new' && isNewEntry(entry)
+            || entry.category === currentFilter;
         const matchesSearch = !searchTerm || 
             entry.name.toLowerCase().includes(searchTerm.toLowerCase()) ||
             entry.description.toLowerCase().includes(searchTerm.toLowerCase());
@@ -114,14 +149,21 @@ function renderEntries() {
     });
 
     if (filteredEntries.length === 0) {
-        entriesGrid.innerHTML = '<div class="loading">No entries match your search.</div>';
+        const message = currentFilter === 'new' 
+            ? 'No new entries since your last visit!' 
+            : 'No entries match your search.';
+        entriesGrid.innerHTML = `<div class="loading">${message}</div>`;
         return;
     }
 
-    entriesGrid.innerHTML = filteredEntries.map(entry => `
-        <div class="entry-card" onclick="openModal('${entry.id}')">
+    entriesGrid.innerHTML = filteredEntries.map(entry => {
+        const isNew = isNewEntry(entry);
+        const newBadge = isNew ? '<span class="new-badge">NEW</span>' : '';
+        
+        return `
+        <div class="entry-card ${isNew ? 'new-entry' : ''}" onclick="openModal('${entry.id}')">
             <div class="entry-header">
-                <h3 class="entry-name">${entry.name}</h3>
+                <h3 class="entry-name">${entry.name}${newBadge}</h3>
                 <span class="entry-category">${entry.category}</span>
             </div>
             <p class="entry-description">${autoLinkDescription(entry.description)}</p>
@@ -130,7 +172,7 @@ function renderEntries() {
                 <span>${formatDate(entry.createdAt)}</span>
             </div>
         </div>
-    `).join('');
+    `}).join('');
 }
 
 // Filter by category
