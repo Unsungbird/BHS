@@ -560,6 +560,18 @@
       "id": "1761857167644",
       "createdAt": "2025-10-30T20:46:07.644Z",
       "createdBy": "tsarra_nade"
+    },
+    {
+      "name": "Orion Connelly",
+      "category": "NPC",
+      "description": "Orion Connelly is a skilled pilot in the 509th Supply and Support Squadron for the Concord of Systems. Known for their impressive evasive maneuvers, Connelly plays a crucial role in ensuring the successful delivery of supplies and support during operations in various sectors of space. Their expertise is vital to the operational efficiency of the squadron.",
+      "isUpdate": false,
+      "relatedTopics": [
+        "Concord of Systems"
+      ],
+      "id": "1761858636246",
+      "createdAt": "2025-10-30T21:10:36.246Z",
+      "createdBy": "tsarra_nade"
     }
   ]
 }
