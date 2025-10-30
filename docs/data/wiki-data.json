@@ -572,6 +572,18 @@
       "id": "1761858636246",
       "createdAt": "2025-10-30T21:10:36.246Z",
       "createdBy": "tsarra_nade"
+    },
+    {
+      "name": "Roberto Caprakan",
+      "category": "NPC",
+      "description": "Roberto Caprakan is the crew chief of the 509th Supply and Support Squadron for the Concord of Systems. His ship, affectionately referred to as 'The Turtle,' is known for its efficient supply runs. Caprakan possesses an uncanny knack for sourcing the right supplies from the right suppliers, making him an invaluable asset to his crew.",
+      "isUpdate": false,
+      "relatedTopics": [
+        "Concord of Systems"
+      ],
+      "id": "1761859159414",
+      "createdAt": "2025-10-30T21:19:19.414Z",
+      "createdBy": "tsarra_nade"
     }
   ]
 }
