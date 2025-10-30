@@ -524,6 +524,18 @@
       "id": "1761575725144",
       "createdAt": "2025-10-27T14:35:25.144Z",
       "createdBy": "tsarra_nade"
+    },
+    {
+      "name": "Commander Gize Zapico",
+      "category": "NPC",
+      "description": "Commander Gize Zapico is a skilled navigator of the Dominion carrier Inevitability. Known for his cunning and strategic mind, he upholds a strong military persona, embodying leadership and tactical expertise in the face of challenges.",
+      "isUpdate": false,
+      "relatedTopics": [
+        "Inevitability"
+      ],
+      "id": "1761833600560",
+      "createdAt": "2025-10-30T14:13:20.560Z",
+      "createdBy": "tsarra_nade"
     }
   ]
 }
