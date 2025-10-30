@@ -280,6 +280,26 @@ body {
     border: 1px solid var(--border);
 }
 
+/* Mark as Read Button */
+.mark-read-btn {
+    padding: 0.75rem 2rem;
+    background: var(--success);
+    border: none;
+    border-radius: 8px;
+    color: white;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 12px rgba(16, 185, 129, 0.3);
+}
+
+.mark-read-btn:hover {
+    background: #059669;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(16, 185, 129, 0.4);
+}
+
 .stat {
     display: flex;
     flex-direction: column;
@@ -364,6 +384,30 @@ body {
 }
 
 .entry-card:hover::before {
+    transform: scaleX(1);
+}
+
+/* New Entry Badge */
+.new-badge {
+    display: inline-block;
+    margin-left: 0.5rem;
+    padding: 0.15rem 0.5rem;
+    background: var(--success);
+    color: white;
+    font-size: 0.65rem;
+    font-weight: 700;
+    border-radius: 4px;
+    vertical-align: middle;
+    letter-spacing: 0.5px;
+}
+
+.entry-card.new-entry {
+    border-color: var(--success);
+    box-shadow: 0 0 0 1px var(--success);
+}
+
+.entry-card.new-entry::before {
+    background: linear-gradient(90deg, var(--success), var(--accent));
     transform: scaleX(1);
 }
 

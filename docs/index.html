@@ -10,18 +10,15 @@
     <div class="container">
         <!-- Header -->
         <header class="header">
-  <h1 class="title">Mnemosyne</h1>
-  <p class="subtitle">Your personal memory companion</p>
-
-  <!-- Theme Switcher -->
-  <div class="theme-switcher" id="themeSwitcher">
-    <button class="theme-btn" data-theme="default" onclick="switchTheme('default')">Default</button>
-    <button class="theme-btn" data-theme="bebop"   onclick="switchTheme('bebop')">Bebop</button>
-    <button class="theme-btn" data-theme="gundam"  onclick="switchTheme('gundam')">Gundam</button>
-  </div>
-</header>
-
-
+            <h1 class="title">Mnemosyne</h1>
+            <p class="subtitle">Your personal memory companion</p>
+            <!-- Theme Switcher -->
+            <div class="theme-switcher" id="themeSwitcher">
+                <button class="theme-btn" data-theme="default" onclick="switchTheme('default')">Default</button>
+                <button class="theme-btn" data-theme="bebop" onclick="switchTheme('bebop')">Bebop</button>
+                <button class="theme-btn" data-theme="gundam" onclick="switchTheme('gundam')">Gundam</button>
+            </div>
+        </header>
         <!-- Search and Filter -->
         <div class="controls">
             <input 
@@ -35,7 +32,6 @@
                 <button class="filter-btn active" data-category="all">All</button>
             </div>
         </div>
-
         <!-- Stats Bar -->
         <div class="stats-bar" id="statsBar">
             <div class="stat">
@@ -44,11 +40,14 @@
             </div>
         </div>
 
+        <!-- Mark as Read Button -->
+        <div id="markAsReadContainer" style="display: none; text-align: center; margin-bottom: 1.5rem;">
+            <button class="mark-read-btn" onclick="markAllAsRead()">✓ Mark All as Read</button>
+        </div>
         <!-- Wiki Entries Grid -->
         <div class="entries-grid" id="entriesGrid">
             <div class="loading">Loading wiki entries...</div>
         </div>
-
         <!-- Entry Modal -->
         <div class="modal" id="entryModal">
             <div class="modal-content">
@@ -56,13 +55,11 @@
                 <div id="modalBody"></div>
             </div>
         </div>
-
         <!-- Footer -->
         <footer class="footer">
             <p>Updated automatically via Discord bot • Last sync: <span id="lastUpdate">Never</span></p>
         </footer>
     </div>
-
     <script src="script.js"></script>
 </body>
 </html>
