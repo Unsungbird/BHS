@@ -20,19 +20,24 @@ async function loadWikiData() {
     try {
         // Get last visit time from localStorage
         lastVisitTime = localStorage.getItem('wiki-last-visit');
+        console.log('Last visit time:', lastVisitTime);
         
         // Try to load from the data folder
         const response = await fetch('data/wiki-data.json');
         if (!response.ok) throw new Error('Data not found');
         
         wikiData = await response.json();
+        console.log('Loaded entries:', wikiData.entries.length);
+        
         initializeFilters();
         updateStats();
         renderEntries();
         updateLastSync();
         
         // Update last visit time to now
-        localStorage.setItem('wiki-last-visit', new Date().toISOString());
+        const now = new Date().toISOString();
+        localStorage.setItem('wiki-last-visit', now);
+        console.log('Updated last visit to:', now);
     } catch (error) {
         console.error('Error loading wiki data:', error);
         entriesGrid.innerHTML = `
@@ -92,13 +97,26 @@ function initializeFilters() {
 
 // Count new entries since last visit
 function countNewEntries() {
-    if (!lastVisitTime) return 0;
+    if (!lastVisitTime) {
+        console.log('No last visit time, returning 0');
+        return 0;
+    }
     
-    return wikiData.entries.filter(entry => {
+    const count = wikiData.entries.filter(entry => {
         const entryDate = new Date(entry.updatedAt || entry.createdAt);
         const lastVisit = new Date(lastVisitTime);
-        return entryDate > lastVisit;
+        const isNew = entryDate > lastVisit;
+        if (isNew) {
+            console.log(`Entry "${entry.name}" is new:`, {
+                entryDate: entryDate.toISOString(),
+                lastVisit: lastVisit.toISOString()
+            });
+        }
+        return isNew;
     }).length;
+    
+    console.log('New entries count:', count);
+    return count;
 }
 
 // Check if entry is new
