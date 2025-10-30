@@ -526,17 +526,6 @@
       "createdBy": "tsarra_nade"
     },
     {
-      "name": "Commander Gize Zapico",
-      "category": "NPC",
-      "description": "Commander Gize Zapico is a skilled navigator of the Concord of Systems carrier Inevitability. Renowned for his cunning and strategic mind, he embodies a strong military persona and demonstrates exceptional leadership and tactical expertise when faced with challenges.",
-      "isUpdate": true,
-      "relatedTopics": [
-        "Concord of Systems"
-      ],
-      "updatedAt": "2025-10-30T14:21:33.115Z",
-      "updatedBy": "tsarra_nade"
-    },
-    {
       "name": "Gabriel Brooks",
       "category": "NPC",
       "description": "Gabriel Brooks is a skilled fighter pilot serving in the 20th Fleet Starfighters under Commander Gize Zapico. He has endured personal tragedy, having lost his husband to a curable disease, which has profoundly affected his outlook on life and service. His experiences shape his resolve as he navigates the challenges faced by the fleet amidst the ongoing conflicts in the universe.",
