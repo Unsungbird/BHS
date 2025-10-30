@@ -18,9 +18,9 @@ const modalBody = document.getElementById('modalBody');
 // Load wiki data
 async function loadWikiData() {
     try {
-        // Get last visit time from localStorage BEFORE loading new data
-        lastVisitTime = localStorage.getItem('wiki-last-visit');
-        console.log('Last visit time:', lastVisitTime);
+        // Get last read time from localStorage
+        lastVisitTime = localStorage.getItem('wiki-last-read');
+        console.log('Last read time:', lastVisitTime);
         
         // Try to load from the data folder
         const response = await fetch('data/wiki-data.json');
@@ -29,10 +29,24 @@ async function loadWikiData() {
         wikiData = await response.json();
         console.log('Loaded entries:', wikiData.entries.length);
         
+        // Log all entry dates for debugging
+        wikiData.entries.forEach(entry => {
+            console.log(`Entry: ${entry.name}, Created: ${entry.createdAt}, Updated: ${entry.updatedAt || 'none'}`);
+        });
+        
         initializeFilters();
         updateStats();
         renderEntries();
         updateLastSync();
+        
+        // Show "Mark as Read" button if there are new entries
+        const newCount = countNewEntries();
+        const markReadContainer = document.getElementById('markAsReadContainer');
+        if (newCount > 0) {
+            markReadContainer.style.display = 'block';
+        } else {
+            markReadContainer.style.display = 'none';
+        }
         
     } catch (error) {
         console.error('Error loading wiki data:', error);
@@ -47,11 +61,21 @@ async function loadWikiData() {
     }
 }
 
-// Update the last visit timestamp (call this after everything is loaded)
-function updateLastVisitTimestamp() {
+// Mark all entries as read
+function markAllAsRead() {
     const now = new Date().toISOString();
-    localStorage.setItem('wiki-last-visit', now);
-    console.log('Updated last visit to:', now);
+    localStorage.setItem('wiki-last-read', now);
+    console.log('Marked all as read at:', now);
+    
+    // Reload to update UI
+    location.reload();
+}
+
+// Clear read status (for testing)
+function clearReadStatus() {
+    localStorage.removeItem('wiki-last-read');
+    console.log('Cleared read status');
+    location.reload();
 }
 
 // Initialize category filters
@@ -105,16 +129,24 @@ function countNewEntries() {
         return 0;
     }
     
+    const lastVisit = new Date(lastVisitTime);
+    console.log('Last visit as Date object:', lastVisit);
+    console.log('Last visit timestamp:', lastVisit.getTime());
+    
     const count = wikiData.entries.filter(entry => {
         const entryDate = new Date(entry.updatedAt || entry.createdAt);
-        const lastVisit = new Date(lastVisitTime);
         const isNew = entryDate > lastVisit;
-        if (isNew) {
-            console.log(`Entry "${entry.name}" is new:`, {
-                entryDate: entryDate.toISOString(),
-                lastVisit: lastVisit.toISOString()
-            });
-        }
+        
+        console.log(`Entry "${entry.name}":`, {
+            createdAt: entry.createdAt,
+            updatedAt: entry.updatedAt,
+            entryDate: entryDate.toISOString(),
+            entryTimestamp: entryDate.getTime(),
+            lastVisitTimestamp: lastVisit.getTime(),
+            isNew: isNew,
+            comparison: `${entryDate.getTime()} > ${lastVisit.getTime()} = ${isNew}`
+        });
+        
         return isNew;
     }).length;
     
@@ -322,14 +354,3 @@ if (savedTheme !== 'default') {
 
 // Initialize on page load
 loadWikiData();
-
-// Update last visit timestamp when user is about to leave or after a delay
-// This ensures entries added DURING this session show as new next time
-setTimeout(() => {
-    updateLastVisitTimestamp();
-}, 5000); // Wait 5 seconds before updating timestamp
-
-// Also update on page unload
-window.addEventListener('beforeunload', () => {
-    updateLastVisitTimestamp();
-});
