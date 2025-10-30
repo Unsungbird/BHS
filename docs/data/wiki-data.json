@@ -585,6 +585,19 @@
       "id": "1761859993152",
       "createdAt": "2025-10-30T21:33:13.152Z",
       "createdBy": "tsarra_nade"
+    },
+    {
+      "name": "Commander Gize Zapico",
+      "category": "NPC",
+      "description": "Commander Gize Zapico is a skilled navigator serving aboard the Concord of Systems carrier, Inevitability. Renowned for his cunning and strategic acumen, he embodies leadership and tactical expertise, especially when facing challenging situations in the vastness of space.",
+      "isUpdate": false,
+      "relatedTopics": [
+        "Concord of Systems",
+        "Inevitability"
+      ],
+      "id": "1761861308796",
+      "createdAt": "2025-10-30T21:55:08.796Z",
+      "createdBy": "tsarra_nade"
     }
   ]
 }
