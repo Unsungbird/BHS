@@ -22,6 +22,16 @@ async function loadWikiData() {
         lastVisitTime = localStorage.getItem('wiki-last-read');
         console.log('Last read time:', lastVisitTime);
         
+        // If this is first visit, set timestamp to now minus 7 days
+        // This way existing entries won't show as "new" on first visit
+        if (!lastVisitTime) {
+            const sevenDaysAgo = new Date();
+            sevenDaysAgo.setDate(sevenDaysAgo.getDate() - 7);
+            lastVisitTime = sevenDaysAgo.toISOString();
+            localStorage.setItem('wiki-last-read', lastVisitTime);
+            console.log('First visit! Set initial timestamp to 7 days ago:', lastVisitTime);
+        }
+        
         // Try to load from the data folder
         const response = await fetch('data/wiki-data.json');
         if (!response.ok) throw new Error('Data not found');
