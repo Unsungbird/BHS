@@ -49,13 +49,16 @@ async function loadWikiData() {
         renderEntries();
         updateLastSync();
         
-        // Show "Mark as Read" button if there are new entries
+        // Update button text based on new entries
         const newCount = countNewEntries();
-        const markReadContainer = document.getElementById('markAsReadContainer');
+        const markReadBtn = document.getElementById('markReadBtn');
         if (newCount > 0) {
-            markReadContainer.style.display = 'block';
+            markReadBtn.textContent = `✓ Mark ${newCount} as Read`;
+            markReadBtn.style.display = 'inline-block';
         } else {
-            markReadContainer.style.display = 'none';
+            markReadBtn.textContent = '✓ All Caught Up!';
+            markReadBtn.disabled = true;
+            markReadBtn.style.opacity = '0.5';
         }
         
     } catch (error) {
@@ -115,10 +118,13 @@ function initializeFilters() {
                 const displayName = cat === 'new' 
                     ? `New (${newCount})` 
                     : cat.charAt(0).toUpperCase() + cat.slice(1);
+                
+                // Preserve current filter when rebuilding
+                const isActive = cat === currentFilter;
                     
                 filterHTML += `
                     <button 
-                        class="filter-btn ${cat === 'all' ? 'active' : ''} ${cat === 'new' ? 'new-filter' : ''}" 
+                        class="filter-btn ${isActive ? 'active' : ''} ${cat === 'new' ? 'new-filter' : ''}" 
                         data-category="${cat}"
                         onclick="filterByCategory('${cat}')"
                     >
