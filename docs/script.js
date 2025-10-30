@@ -18,7 +18,7 @@ const modalBody = document.getElementById('modalBody');
 // Load wiki data
 async function loadWikiData() {
     try {
-        // Get last visit time from localStorage
+        // Get last visit time from localStorage BEFORE loading new data
         lastVisitTime = localStorage.getItem('wiki-last-visit');
         console.log('Last visit time:', lastVisitTime);
         
@@ -34,10 +34,6 @@ async function loadWikiData() {
         renderEntries();
         updateLastSync();
         
-        // Update last visit time to now
-        const now = new Date().toISOString();
-        localStorage.setItem('wiki-last-visit', now);
-        console.log('Updated last visit to:', now);
     } catch (error) {
         console.error('Error loading wiki data:', error);
         entriesGrid.innerHTML = `
@@ -49,6 +45,13 @@ async function loadWikiData() {
             </div>
         `;
     }
+}
+
+// Update the last visit timestamp (call this after everything is loaded)
+function updateLastVisitTimestamp() {
+    const now = new Date().toISOString();
+    localStorage.setItem('wiki-last-visit', now);
+    console.log('Updated last visit to:', now);
 }
 
 // Initialize category filters
@@ -319,3 +322,14 @@ if (savedTheme !== 'default') {
 
 // Initialize on page load
 loadWikiData();
+
+// Update last visit timestamp when user is about to leave or after a delay
+// This ensures entries added DURING this session show as new next time
+setTimeout(() => {
+    updateLastVisitTimestamp();
+}, 5000); // Wait 5 seconds before updating timestamp
+
+// Also update on page unload
+window.addEventListener('beforeunload', () => {
+    updateLastVisitTimestamp();
+});
