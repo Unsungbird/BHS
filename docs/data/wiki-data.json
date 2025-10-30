@@ -547,6 +547,19 @@
       "id": "1761834783921",
       "createdAt": "2025-10-30T14:33:03.921Z",
       "createdBy": "tsarra_nade"
+    },
+    {
+      "name": "Amalia Talbot",
+      "category": "NPC",
+      "description": "Amalia Talbot is a skilled fighter pilot serving in the 20th Fleet Starfighters under Commander Gize Zapico. As Gabriel Brooks' primary heavy gunner, she has participated in numerous high-stakes missions, often bearing the burden of immense costs. Her experience in combat reflects the harsh realities faced by pilots in the ongoing conflict.",
+      "isUpdate": false,
+      "relatedTopics": [
+        "Commander Gize Zapico",
+        "Gabriel Brooks"
+      ],
+      "id": "1761857167644",
+      "createdAt": "2025-10-30T20:46:07.644Z",
+      "createdBy": "tsarra_nade"
     }
   ]
 }
