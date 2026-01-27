@@ -598,6 +598,16 @@
       "id": "1761861308796",
       "createdAt": "2025-10-30T21:55:08.796Z",
       "createdBy": "tsarra_nade"
+    },
+    {
+      "name": "DF-107 Gator",
+      "category": "Ship",
+      "description": "The DF-107 Gator is a previous generation fighter known for its capability to operate in subzero environments. This vessel is regarded as very reliable, provided that it is maintained by a skilled technician. Its design emphasizes ease of handling in extreme conditions, making it a favored choice among pilots who are familiar with its quirks.",
+      "isUpdate": false,
+      "relatedTopics": [],
+      "id": "1769475423617",
+      "createdAt": "2026-01-27T00:57:03.636Z",
+      "createdBy": "tsarra_nade"
     }
   ]
 }
