@@ -608,6 +608,18 @@
       "id": "1769475423617",
       "createdAt": "2026-01-27T00:57:03.636Z",
       "createdBy": "tsarra_nade"
+    },
+    {
+      "name": "Manson “Manny” Heimer",
+      "category": "NPC",
+      "description": "Manson 'Manny' Heimer is a renowned collector of odds and ends residing on the moon Heliograss. He possesses a keen eye for valuable deals and prefers cashless transactions, valuing long-lasting relationships with his customers. His expertise and unique collectibles make him a notable figure in the local commerce of Heliograss.",
+      "isUpdate": false,
+      "relatedTopics": [
+        "Heliograss"
+      ],
+      "id": "1769475544482",
+      "createdAt": "2026-01-27T00:59:04.482Z",
+      "createdBy": "tsarra_nade"
     }
   ]
 }
