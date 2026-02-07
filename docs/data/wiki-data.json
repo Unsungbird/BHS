@@ -620,6 +620,16 @@
       "id": "1769475544482",
       "createdAt": "2026-01-27T00:59:04.482Z",
       "createdBy": "tsarra_nade"
+    },
+    {
+      "name": "Honeypot",
+      "category": "Ship",
+      "description": "The Honeypot is a Viti Levu class super transport, renowned as one of the three sister ships. Purpose-built for optimal humidity and moisture control, it features multiple chambers designed for the growth of botany, making it a vital asset for agricultural endeavors.",
+      "isUpdate": false,
+      "relatedTopics": [],
+      "id": "1770486573213",
+      "createdAt": "2026-02-07T17:49:33.213Z",
+      "createdBy": "tsarra_nade"
     }
   ]
 }
