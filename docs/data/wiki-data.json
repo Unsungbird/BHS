@@ -630,6 +630,16 @@
       "id": "1770486573213",
       "createdAt": "2026-02-07T17:49:33.213Z",
       "createdBy": "tsarra_nade"
+    },
+    {
+      "name": "Scholar",
+      "category": "Ship",
+      "description": "The Scholar is a Viti Levu class super transport, renowned as one of the three sister ships designed specifically for humidity and moisture control. This remarkable vessel boasts thousands of shelves dedicated to the preservation of mankind's various libraries and literary works.",
+      "isUpdate": false,
+      "relatedTopics": [],
+      "id": "1770486622963",
+      "createdAt": "2026-02-07T17:50:22.963Z",
+      "createdBy": "tsarra_nade"
     }
   ]
 }
