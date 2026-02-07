@@ -640,6 +640,16 @@
       "id": "1770486622963",
       "createdAt": "2026-02-07T17:50:22.963Z",
       "createdBy": "tsarra_nade"
+    },
+    {
+      "name": "The Pasture",
+      "category": "Ship",
+      "description": "The Pasture is a Viti Levu class super transport, renowned as one of the three sister ships designed to accommodate thousands of species simultaneously. It is the most active among the sister ships and often draws comparisons to the biblical story of Noah's ark due to its purpose and functionality.",
+      "isUpdate": false,
+      "relatedTopics": [],
+      "id": "1770487861691",
+      "createdAt": "2026-02-07T18:11:01.691Z",
+      "createdBy": "tsarra_nade"
     }
   ]
 }
