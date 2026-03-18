@@ -22,7 +22,7 @@
     },
     {
       "name": "Sun System",
-      "category": "Solar System",
+      "category": "System",
       "description": "The Sun System is the birthplace of mankind, now characterized by stark social divides. Aristocrats indulge in the remaining wealth of a deteriorating planet, while the impoverished struggle for survival, unable to afford escape from the harsh conditions of their home world.",
       "isUpdate": false,
       "relatedTopics": [],
@@ -65,6 +65,590 @@
       ],
       "id": "1761438399828",
       "createdAt": "2025-10-26T00:26:39.828Z",
+      "createdBy": "tsarra_nade"
+    },
+    {
+      "name": "Centauri",
+      "category": "System",
+      "description": "Centauri is Humanity's first interstellar civilization, serving as the core node in the intersystem trade web. It is renowned for its expertise in shipbuilding and is home to three stars: Alpha Centauri A, Alpha Centauri B, and Proxima Centauri.",
+      "isUpdate": false,
+      "relatedTopics": [
+        "Proxima B",
+        "Alpha Centauri A",
+        "Alpha Centauri B",
+        "Proxima Centauri"
+      ],
+      "id": "1761439373309",
+      "createdAt": "2025-10-26T00:42:53.309Z",
+      "createdBy": "tsarra_nade"
+    },
+    {
+      "name": "Alpha Centauri A",
+      "category": "Star",
+      "description": "Alpha Centauri A is a G-Type sun-like star located in the Centauri system. It is one of the three major stars in this system and serves as the host star for the planet Centauria, known for its stable conditions and potential for supporting life. This star plays a crucial role in the dynamics of the system, influencing both celestial and planetary behaviors.",
+      "isUpdate": false,
+      "relatedTopics": [
+        "Centauri",
+        "Centauria"
+      ],
+      "id": "1761439902892",
+      "createdAt": "2025-10-26T00:51:42.892Z",
+      "createdBy": "tsarra_nade"
+    },
+    {
+      "name": "Alpha Centauri B",
+      "category": "Star",
+      "description": "Alpha Centauri B is a K-Type dimmer sun-like star that serves as the host for a large inhospitable gas giant. This gas giant is orbited by the moon Heliograss, contributing to the diverse celestial dynamics of the Sun System. The star's properties make it a subject of interest for explorations in the Centauri region.",
+      "isUpdate": false,
+      "relatedTopics": [
+        "Heliograss",
+        "Sun System",
+        "Centauri"
+      ],
+      "id": "1761440051775",
+      "createdAt": "2025-10-26T00:54:11.775Z",
+      "createdBy": "tsarra_nade"
+    },
+    {
+      "name": "Proxima Centauri",
+      "category": "Star",
+      "description": "Proxima Centauri is an M-Type red dwarf star and the smallest and faintest of the three Centauri stars. It is known primarily as the host of Proxima B, a nearby exoplanet, and Proxima Station, an important outpost for exploration and research in the region.",
+      "isUpdate": false,
+      "relatedTopics": [
+        "Proxima B",
+        "Centauri",
+        "Proxima Station"
+      ],
+      "id": "1761440222904",
+      "createdAt": "2025-10-26T00:57:02.904Z",
+      "createdBy": "tsarra_nade"
+    },
+    {
+      "name": "Centauria",
+      "category": "Planet",
+      "description": "Centauria, the first intergalactic planet, boasts an Earth-like climate and hosts advanced photosynthetic life. It features tides that are occasionally interrupted by the orbit of Centauri B, and its unique ecosystems produce significantly more oxygen than Earth.",
+      "isUpdate": false,
+      "relatedTopics": [
+        "Centauri",
+        "Alpha Centauri B"
+      ],
+      "id": "1761440349175",
+      "createdAt": "2025-10-26T00:59:09.175Z",
+      "createdBy": "tsarra_nade"
+    },
+    {
+      "name": "Proxima Station",
+      "category": "Station",
+      "description": "Proxima Station is a slipframe assembly station that produces ships capable of faster-than-light ferrying. It is a kilometer-long synthetic world and hosts the first dock for faster-than-light ferries, serving as a crucial hub in space travel.",
+      "isUpdate": false,
+      "relatedTopics": [
+        "Proxima B",
+        "Proxima Centauri"
+      ],
+      "id": "1761440447000",
+      "createdAt": "2025-10-26T01:00:47.000Z",
+      "createdBy": "tsarra_nade"
+    },
+    {
+      "name": "Wolf 359",
+      "category": "System",
+      "description": "Wolf 359 is mankind's newest and most recent outpost located in the depths of the universe. Only the most hardy individuals can thrive here, relying heavily on their own survival skills and resourcefulness to navigate the challenges of this remote environment.",
+      "isUpdate": false,
+      "relatedTopics": [],
+      "id": "1761440820213",
+      "createdAt": "2025-10-26T01:07:00.213Z",
+      "createdBy": "tsarra_nade"
+    },
+    {
+      "name": "Ra's Path",
+      "category": "Planet",
+      "description": "Ra's Path is a tidally locked desert world orbiting the star Wolf 359. The planet features a stark contrast, with one side perpetually scorched by the sun and the other in eternal cold. Survivors of a catastrophic event have colonized the narrow 'terminator band,' where conditions are more hospitable for life.",
+      "isUpdate": false,
+      "relatedTopics": [
+        "Wolf 359"
+      ],
+      "id": "1761440880718",
+      "createdAt": "2025-10-26T01:08:00.718Z",
+      "createdBy": "tsarra_nade"
+    },
+    {
+      "name": "Shu",
+      "category": "Planet",
+      "description": "Shu is a barely habitable hydrogen gas giant that hosts Shu's Embrace, a series of sky platforms utilized for various purposes. The planet is home to Stormriders, who pilot extraction vessels to harvest the abundant hydrogen in its atmosphere. Despite its harsh conditions, the sky platforms allow for some degree of habitation and operation.",
+      "isUpdate": false,
+      "relatedTopics": [],
+      "id": "1761440975089",
+      "createdAt": "2025-10-26T01:09:35.089Z",
+      "createdBy": "tsarra_nade"
+    },
+    {
+      "name": "Duat's Eye",
+      "category": "Station",
+      "description": "Duat's Eye is a sanctuary for deep space travelers, serving as the only modernity within the Wolf System. This unique station orbits in the Lagrange point between Wolf 359 and Shu, providing a crucial waypoint for those journeying through the vastness of space.",
+      "isUpdate": false,
+      "relatedTopics": [
+        "Wolf 359",
+        "Shu"
+      ],
+      "id": "1761441076784",
+      "createdAt": "2025-10-26T01:11:16.784Z",
+      "createdBy": "tsarra_nade"
+    },
+    {
+      "name": "Nunet",
+      "category": "Planet",
+      "description": "Nunet is an enigmatic world known as the next frontier, characterized by its frozen oceans that are ruled by massive leviathan-like serpents. The dark icy crust of this planet holds many secrets, waiting to be uncovered by intrepid explorers.",
+      "isUpdate": false,
+      "relatedTopics": [],
+      "id": "1761441129671",
+      "createdAt": "2025-10-26T01:12:09.671Z",
+      "createdBy": "tsarra_nade"
+    },
+    {
+      "name": "Barnard",
+      "category": "System",
+      "description": "Known as the Crucible of Progress, the Barnard System is currently experiencing a new industrial revolution, driven by its rich abundance of resources. This transformation is attracting attention from various sectors eager to harness the untapped potential of this prosperous system.",
+      "isUpdate": false,
+      "relatedTopics": [],
+      "id": "1761441261614",
+      "createdAt": "2025-10-26T01:14:21.614Z",
+      "createdBy": "tsarra_nade"
+    },
+    {
+      "name": "Barnard's Star",
+      "category": "Star",
+      "description": "Barnard's Star is a very old red dwarf located in the Alpha Centauri system. It is characterized by its quiet, low-mass, and low-activity nature, which contributes significantly to the stability and reliability of the surrounding celestial environment.",
+      "isUpdate": true,
+      "relatedTopics": [
+        "Barnard"
+      ],
+      "id": "1761441301692",
+      "createdAt": "2025-10-26T01:15:01.692Z",
+      "createdBy": "tsarra_nade"
+    },
+    {
+      "name": "Askr",
+      "category": "Station",
+      "description": "Askr is a massive megastructure orbiting in the warm zone of Barnard's Star. Its sheer size allows it to rotate, simulating gravity for its inhabitants. The station also features a FTL (Faster Than Light) Ferry Dock, facilitating interstellar travel.",
+      "isUpdate": false,
+      "relatedTopics": [
+        "Barnard",
+        "Barnard's Star"
+      ],
+      "id": "1761441394029",
+      "createdAt": "2025-10-26T01:16:34.029Z",
+      "createdBy": "tsarra_nade"
+    },
+    {
+      "name": "Mjolnir's Eye",
+      "category": "Planet",
+      "description": "Mjolnir's Eye is the only outpost located on the gas giant Mjolnir. This Orbital Cloud City operates through advanced technologies, utilizing fusion power and atmospheric harvesting to sustain its unique environment and community.",
+      "isUpdate": false,
+      "relatedTopics": [],
+      "id": "1761441466574",
+      "createdAt": "2025-10-26T01:17:46.574Z",
+      "createdBy": "tsarra_nade"
+    },
+    {
+      "name": "Ymir's Garden",
+      "category": "Moon",
+      "description": "Ymir's Garden is a moon of Mjolnir, characterized by its warm environment resulting from gravitational pull and geothermal activity. The surface of Ymir's Garden is perpetually cloaked in a dense fog that has been captured from Mjolnir, creating a unique atmospheric condition.",
+      "isUpdate": false,
+      "relatedTopics": [
+        "Mjolnir"
+      ],
+      "id": "1761441530268",
+      "createdAt": "2025-10-26T01:18:50.268Z",
+      "createdBy": "tsarra_nade"
+    },
+    {
+      "name": "Niflheim",
+      "category": "Planet",
+      "description": "Niflheim is a Super-Earth located in a cold orbit, characterized by its subsurface oceans that support marine life. Human settlements are buried beneath a layer of ice, providing insulation against the frigid environment above. This unique habitat suggests a complex ecosystem adapted to extreme cold and low light conditions.",
+      "isUpdate": false,
+      "relatedTopics": [],
+      "id": "1761441762297",
+      "createdAt": "2025-10-26T01:22:42.297Z",
+      "createdBy": "tsarra_nade"
+    },
+    {
+      "name": "Helgardh",
+      "category": "Planet",
+      "description": "Helgardh is a rogue planet orbiting Barnard's Star. Its thick atmosphere and pervasive volcanic activity create a warm environment, providing warmth even in the frigid expanse of deep space. This unique planet presents an intriguing case for exploration within the Barnard system.",
+      "isUpdate": true,
+      "relatedTopics": [
+        "Barnard",
+        "Barnard's Star"
+      ],
+      "id": "1761441850245",
+      "createdAt": "2025-10-26T01:24:10.245Z",
+      "createdBy": "tsarra_nade"
+    },
+    {
+      "name": "Luhman",
+      "category": "System",
+      "description": "Luhman is a star system that includes the binary star pair Luhman 16 A and Luhman 16 B. This system is notable for harboring multiple exoplanets, making it a subject of interest for astrophysics and astrobiology. It is known as Mankind's library. Aims for eons of preservation.",
+      "isUpdate": false,
+      "relatedTopics": [],
+      "id": "1761442003030",
+      "createdAt": "2025-10-26T01:26:43.030Z",
+      "createdBy": "tsarra_nade"
+    },
+    {
+      "name": "Ninlil's Band",
+      "category": "Planet",
+      "description": "Ninlil's Band is a unique exoplanet tidally locked to Luhman 16A. Its thick atmosphere ensures even distribution of heat, while dense cloud cover protects the surface from harmful radiation. Notably, the planet hosts the Library of Literature, a renowned repository of knowledge and culture.",
+      "isUpdate": false,
+      "relatedTopics": [
+        "Luhman"
+      ],
+      "id": "1761442119194",
+      "createdAt": "2025-10-26T01:28:39.194Z",
+      "createdBy": "tsarra_nade"
+    },
+    {
+      "name": "Mirage",
+      "category": "Planet",
+      "description": "Mirage is a gas giant located in orbit around Luhman 16A, notable for hosting the renowned library known as 'Enlil's Mantle.' This library serves as the comprehensive repository of all of mankind's industrial knowledge. Floating cities within Mirage’s breathable-pressure layer leverage wind turbines and fusion reactors for their power needs.",
+      "isUpdate": false,
+      "relatedTopics": [
+        "Luhman",
+        "Enlil's Mantle"
+      ],
+      "id": "1761442184909",
+      "createdAt": "2025-10-26T01:29:44.909Z",
+      "createdBy": "tsarra_nade"
+    },
+    {
+      "name": "Ereshkigal",
+      "category": "Planet",
+      "description": "Ereshkigal is a garden of Eden-like planet that was once a drifting celestial body. It has been captured by the gravity of Luhman 16A and now serves as a unique library housing all of mankind's gathered seeds and plants. This verdant realm represents a convergence of nature and knowledge, embodying the hopes of preserving Earth's biological heritage.",
+      "isUpdate": false,
+      "relatedTopics": [
+        "Luhman"
+      ],
+      "id": "1761442242397",
+      "createdAt": "2025-10-26T01:30:42.397Z",
+      "createdBy": "tsarra_nade"
+    },
+    {
+      "name": "Abzu",
+      "category": "Planet",
+      "description": "Abzu is a giant ocean world orbiting Luhman 16B, renowned for being a comprehensive library of all of Mankind's gathered sea creatures. The planet is kept warm by the tidal forces, creating a unique and thriving marine ecosystem.",
+      "isUpdate": false,
+      "relatedTopics": [
+        "Luhman 16B"
+      ],
+      "id": "1761442293442",
+      "createdAt": "2025-10-26T01:31:33.442Z",
+      "createdBy": "tsarra_nade"
+    },
+    {
+      "name": "Nammu's Eye",
+      "category": "Station",
+      "description": "Nammu's Eye is a rotating space station positioned at a Lagrange point between Luhman 16A and 16B. Serving as a vital hub for intergalactic communication, it facilitates advanced connections across vast distances. The station also features a FTL Ferry Dock, making it a crucial waypoint for travelers in the region.",
+      "isUpdate": false,
+      "relatedTopics": [
+        "Luhman"
+      ],
+      "id": "1761442331447",
+      "createdAt": "2025-10-26T01:32:11.447Z",
+      "createdBy": "tsarra_nade"
+    },
+    {
+      "name": "Concord of Systems",
+      "category": "Faction",
+      "description": "The Concord of Systems is a powerful faction born from the Unity Accords, originally formed to maintain interstellar connections among humanity's colonies. Transitioning from a cooperative alliance to a dominion, it is now known for its bureaucratic rule, where governors wield significant power akin to kings, and the original ideals of unity have given way to control and occupation. Despite this, many worlds continue to prosper under its flag, while resentment brews among the ruled populations.",
+      "isUpdate": false,
+      "relatedTopics": [
+        "Proxima Station",
+        "Centauria",
+        "Luhman",
+        "Barnard"
+      ],
+      "id": "1761442449472",
+      "createdAt": "2025-10-26T01:34:09.472Z",
+      "createdBy": "tsarra_nade"
+    },
+    {
+      "name": "Hermes Council",
+      "category": "Faction",
+      "description": "The Hermes Council is a powerful organization born from the remnants of humanity following the Collapse. Established aboard Nammu's Eye, this council acts as a neutral arbiter of knowledge and information, shaping the historical narrative and providing lost technologies to those in need. While revered as sages by some, they are seen as watchers and manipulators of truth by others, ensuring the survival of humanity's experiment through their archives and decisions.",
+      "isUpdate": false,
+      "relatedTopics": [
+        "Nammu's Eye",
+        "Concord of Systems"
+      ],
+      "id": "1761442483159",
+      "createdAt": "2025-10-26T01:34:43.159Z",
+      "createdBy": "tsarra_nade"
+    },
+    {
+      "name": "Free Miners' Syndicate",
+      "category": "Faction",
+      "description": "The Free Miners' Syndicate is a powerful union that emerged from the oppressed labor of miners in Barnard's Star. Initially formed as a response to corporate exploitation by the Concord of Systems, the Syndicate evolved into a formidable guild and cartel, controlling trade routes and enforcing their will throughout the region. Its leaders, known as Foremen, navigate the fine line between criminality and legitimacy, making them both the law of the frontier and a significant threat to corporate interests.",
+      "isUpdate": false,
+      "relatedTopics": [
+        "Barnard's Star",
+        "Concord of Systems"
+      ],
+      "id": "1761442518066",
+      "createdAt": "2025-10-26T01:35:18.066Z",
+      "createdBy": "tsarra_nade"
+    },
+    {
+      "name": "House Heliograss",
+      "category": "Faction",
+      "description": "House Heliograss is a powerful dynasty that emerged from the descendants of the survivors of Sagan's Reach on the moon Heliograss, known for its shipbuilding prowess and dynastic culture. They have built their wealth and influence through the construction of fleets that serve both commerce and war, while navigating a landscape of political intrigue, where marriage and betrayal define their social structures. Despite their opulent facade, guilt lingers over the cost of their fortune, rooted in the lives of the first colonists who perished in the harsh environment of Heliograss.",
+      "isUpdate": true,
+      "relatedTopics": [
+        "Heliograss",
+        "Concord of Systems",
+        "Sagan's Reach"
+      ],
+      "id": "1761442575978",
+      "createdAt": "2025-10-26T01:36:15.978Z",
+      "createdBy": "tsarra_nade"
+    },
+    {
+      "name": "Red Sky Compact",
+      "category": "Faction",
+      "description": "The Red Sky Compact is a rebel faction born in the dust of Ra's Path, a tidally locked desert world in the Wolf 359 system. Formed by settlers resisting oppressive taxation and resource seizure by the Concord, they evolved from farmers, smugglers, and refugees into a network of defiance against bureaucracy. Their rebellion has spread across various locations, including the mines of Barnard and the slums of Centauria, with their actions representing the human spirit's struggle for freedom.",
+      "isUpdate": false,
+      "relatedTopics": [
+        "Ra's Path",
+        "Wolf 359",
+        "Barnard",
+        "Centauria",
+        "Concord of Systems"
+      ],
+      "id": "1761442602199",
+      "createdAt": "2025-10-26T01:36:42.199Z",
+      "createdBy": "tsarra_nade"
+    },
+    {
+      "name": "Aegis Fleet",
+      "category": "Faction",
+      "description": "The Aegis Fleet is a mercenary organization that arose from a coalition of veteran captains during the chaotic early days of interstellar colonization. Initially formed to protect trade routes from pirates and predators, they gained notoriety for their valor and honor. However, as the Concord rose to power, the Fleet became a paid force, compromising their principles for contracts and credits. Despite their shift towards mercenarism, they remain a crucial presence in the void, often invoked by those in need of protection amidst the dangers of space.",
+      "isUpdate": false,
+      "relatedTopics": [],
+      "id": "1761442627281",
+      "createdAt": "2025-10-26T01:37:07.281Z",
+      "createdBy": "tsarra_nade"
+    },
+    {
+      "name": "Nunet Syndicate",
+      "category": "Faction",
+      "description": "The Nunet Syndicate is a powerful constellation of families and cartels operating beneath the icy crust of Nunet in the Wolf 359 system. They specialize in splicing, harvesting, and trading in the biological riches of the Leviathan-serpents that inhabit the ocean depths, including regenerative medical serums and living DNA. Operating outside the law, the Syndics hold court in bioluminescent caverns and influence both rebel cells and Concord governance through their immense wealth.",
+      "isUpdate": true,
+      "relatedTopics": [
+        "Nunet",
+        "Wolf 359",
+        "Concord of Systems"
+      ],
+      "id": "1761442658921",
+      "createdAt": "2025-10-26T01:37:38.921Z",
+      "createdBy": "tsarra_nade"
+    },
+    {
+      "name": "Order of Abzu",
+      "category": "Faction",
+      "description": "The Order of Abzu is a religious faction that originated from the first colonists on the oceanic planet Abzu, where they became attuned to the mysterious 'Current' — a harmonic resonance between consciousness and the ocean. They believe that all water, including blood, is interconnected and preach against pollution and exploitation of life, viewing such actions as blasphemy. With coral monasteries and a silent infiltration of various systems, their influence has grown, blending mysticism with ecological activism.",
+      "isUpdate": false,
+      "relatedTopics": [
+        "Abzu",
+        "Concord of Systems"
+      ],
+      "id": "1761442683242",
+      "createdAt": "2025-10-26T01:38:03.242Z",
+      "createdBy": "tsarra_nade"
+    },
+    {
+      "name": "Collapse of Earth",
+      "category": "Lore",
+      "description": "The Collapse of Earth marks a dark turning point in humanity's history, culminating in 2147 with the Great Dimming, a catastrophic failure of Earth's orbital infrastructure that left the planet unable to sustain life. As governments and economies crumbled, the rich fled to the stars, followed by the Hermes Initiative's desperate attempt to preserve humanity through cryogenic vessels sent to neighboring systems. With Earth's fate shrouded in uncertainty, claims of corporate warlords and a darkened world obscure the truth of what remains.",
+      "isUpdate": false,
+      "relatedTopics": [
+        "Earth",
+        "Hermes Initiative"
+      ],
+      "id": "1761489038322",
+      "createdAt": "2025-10-26T14:30:38.322Z",
+      "createdBy": "tsarra_nade"
+    },
+    {
+      "name": "Hermes Initiative",
+      "category": "Lore",
+      "description": "The Hermes Initiative emerged as a global coalition of scientists, engineers, and survivalists committed to preserving human life as Earth faced catastrophic decline. They constructed massive automated ships known as Arks, designed for one-way travel, to carry carefully selected passengers into the cosmos, seeking new habitable planets and opportunities for survival. Launched in 2151, the Initiative's missions varied, some aimed at known planets like Proxima B, while others ventured into uncharted territories, planting the seeds for future colonization.",
+      "isUpdate": false,
+      "relatedTopics": [
+        "Proxima B",
+        "Earth"
+      ],
+      "id": "1761489083140",
+      "createdAt": "2025-10-26T14:31:23.140Z",
+      "createdBy": "tsarra_nade"
+    },
+    {
+      "name": "Sagan's Reach",
+      "category": "Lore",
+      "description": "Sagan's Reach is the first generation ship launched by the Hermes Initiative, serving as a colossal Ark carrying humanity's hope beyond the dying Sol system. After emerging from cold sleep in orbit around Alpha Centauri A, it established the first permanent human colony in the Alpha Centauri system, centered on its hull's transformation into a sprawling station. Following initial successes, the colony faced a devastating superquake on the marginally habitable planet Thestis, leading settlers to migrate to the promising moon of Heliograss around the gas giant.",
+      "isUpdate": false,
+      "relatedTopics": [
+        "Alpha Centauri A",
+        "Heliograss",
+        "Hermes Initiative"
+      ],
+      "id": "1761489120083",
+      "createdAt": "2025-10-26T14:32:00.083Z",
+      "createdBy": "tsarra_nade"
+    },
+    {
+      "name": "The First Among All",
+      "category": "NPC",
+      "description": "The First Among All is the enigmatic leader of the Concord of Systems, having served in this role for the past thirty years. He is described as a handsome man in his mid-40s, with his ancestry appearing indeterminate; the residents of the Dominion perceive him as resembling themselves, a testament to effective propaganda. He maintains a private presence, meeting with advisors and officials behind closed doors, while holovids of his meetings and speeches are broadcasted across the Dominion.",
+      "isUpdate": false,
+      "relatedTopics": [
+        "Concord of Systems"
+      ],
+      "id": "1761574779360",
+      "createdAt": "2025-10-27T14:19:39.360Z",
+      "createdBy": "tsarra_nade"
+    },
+    {
+      "name": "Tartarus I",
+      "category": "Ship",
+      "description": "The Tartarus I is a prison transport ship that has been transformed into a makeshift home for its occupants after suffering severe damage from a catastrophic accident. It hosts numerous cryospace chambers, housing individuals who were meant to be transported but now remain in stasis aboard the damaged vessel. The ship's current state presents both a challenge and an opportunity for those aboard as they navigate a precarious existence among the stars.",
+      "isUpdate": false,
+      "relatedTopics": [],
+      "id": "1761575725144",
+      "createdAt": "2025-10-27T14:35:25.144Z",
+      "createdBy": "tsarra_nade"
+    },
+    {
+      "name": "Gabriel Brooks",
+      "category": "NPC",
+      "description": "Gabriel Brooks is a skilled fighter pilot serving in the 20th Fleet Starfighters under Commander Gize Zapico. He has endured personal tragedy, having lost his husband to a curable disease, which has profoundly affected his outlook on life and service. His experiences shape his resolve as he navigates the challenges faced by the fleet amidst the ongoing conflicts in the universe.",
+      "isUpdate": false,
+      "relatedTopics": [
+        "Commander Gize Zapico"
+      ],
+      "id": "1761834783921",
+      "createdAt": "2025-10-30T14:33:03.921Z",
+      "createdBy": "tsarra_nade"
+    },
+    {
+      "name": "Amalia Talbot",
+      "category": "NPC",
+      "description": "Amalia Talbot is a skilled fighter pilot serving in the 20th Fleet Starfighters under Commander Gize Zapico. As Gabriel Brooks' primary heavy gunner, she has participated in numerous high-stakes missions, often bearing the burden of immense costs. Her experience in combat reflects the harsh realities faced by pilots in the ongoing conflict.",
+      "isUpdate": false,
+      "relatedTopics": [
+        "Commander Gize Zapico",
+        "Gabriel Brooks"
+      ],
+      "id": "1761857167644",
+      "createdAt": "2025-10-30T20:46:07.644Z",
+      "createdBy": "tsarra_nade"
+    },
+    {
+      "name": "Orion Connelly",
+      "category": "NPC",
+      "description": "Orion Connelly is a skilled pilot in the 509th Supply and Support Squadron for the Concord of Systems. Known for their impressive evasive maneuvers, Connelly plays a crucial role in ensuring the successful delivery of supplies and support during operations in various sectors of space. Their expertise is vital to the operational efficiency of the squadron.",
+      "isUpdate": false,
+      "relatedTopics": [
+        "Concord of Systems"
+      ],
+      "id": "1761858636246",
+      "createdAt": "2025-10-30T21:10:36.246Z",
+      "createdBy": "tsarra_nade"
+    },
+    {
+      "name": "Roberto Caprakan",
+      "category": "NPC",
+      "description": "Roberto Caprakan is the crew chief of the 509th Supply and Support Squadron for the Concord of Systems. His ship, affectionately referred to as 'The Turtle,' is known for its efficient supply runs. Caprakan possesses an uncanny knack for sourcing the right supplies from the right suppliers, making him an invaluable asset to his crew.",
+      "isUpdate": false,
+      "relatedTopics": [
+        "Concord of Systems"
+      ],
+      "id": "1761859159414",
+      "createdAt": "2025-10-30T21:19:19.414Z",
+      "createdBy": "tsarra_nade"
+    },
+    {
+      "name": "DF-112 Goblin",
+      "category": "Ship",
+      "description": "The DF-112 Goblin is the most advanced starfighter ship deployed by the Concord of Systems. Developed by the Design Bureau, it serves as the successor to the DF-107 ('Gator') and was introduced early in the Great Galactic War.",
+      "isUpdate": false,
+      "relatedTopics": [
+        "Concord of Systems"
+      ],
+      "id": "1761859993152",
+      "createdAt": "2025-10-30T21:33:13.152Z",
+      "createdBy": "tsarra_nade"
+    },
+    {
+      "name": "Commander Gize Zapico",
+      "category": "NPC",
+      "description": "Commander Gize Zapico is a skilled navigator serving aboard the Concord of Systems carrier, Inevitability. Renowned for his cunning and strategic acumen, he embodies leadership and tactical expertise, especially when facing challenging situations in the vastness of space.",
+      "isUpdate": false,
+      "relatedTopics": [
+        "Concord of Systems",
+        "Inevitability"
+      ],
+      "id": "1761861308796",
+      "createdAt": "2025-10-30T21:55:08.796Z",
+      "createdBy": "tsarra_nade"
+    },
+    {
+      "name": "DF-107 Gator",
+      "category": "Ship",
+      "description": "The DF-107 Gator is a previous generation fighter known for its capability to operate in subzero environments. This vessel is regarded as very reliable, provided that it is maintained by a skilled technician. Its design emphasizes ease of handling in extreme conditions, making it a favored choice among pilots who are familiar with its quirks.",
+      "isUpdate": false,
+      "relatedTopics": [],
+      "id": "1769475423617",
+      "createdAt": "2026-01-27T00:57:03.636Z",
+      "createdBy": "tsarra_nade"
+    },
+    {
+      "name": "Manson “Manny” Heimer",
+      "category": "NPC",
+      "description": "Manson 'Manny' Heimer is a renowned collector of odds and ends residing on the moon Heliograss. He possesses a keen eye for valuable deals and prefers cashless transactions, valuing long-lasting relationships with his customers. His expertise and unique collectibles make him a notable figure in the local commerce of Heliograss.",
+      "isUpdate": false,
+      "relatedTopics": [
+        "Heliograss"
+      ],
+      "id": "1769475544482",
+      "createdAt": "2026-01-27T00:59:04.482Z",
+      "createdBy": "tsarra_nade"
+    },
+    {
+      "name": "Honeypot",
+      "category": "Ship",
+      "description": "The Honeypot is a Viti Levu class super transport, renowned as one of the three sister ships. Purpose-built for optimal humidity and moisture control, it features multiple chambers designed for the growth of botany, making it a vital asset for agricultural endeavors.",
+      "isUpdate": false,
+      "relatedTopics": [],
+      "id": "1770486573213",
+      "createdAt": "2026-02-07T17:49:33.213Z",
+      "createdBy": "tsarra_nade"
+    },
+    {
+      "name": "Scholar",
+      "category": "Ship",
+      "description": "The Scholar is a Viti Levu class super transport, renowned as one of the three sister ships designed specifically for humidity and moisture control. This remarkable vessel boasts thousands of shelves dedicated to the preservation of mankind's various libraries and literary works.",
+      "isUpdate": false,
+      "relatedTopics": [],
+      "id": "1770486622963",
+      "createdAt": "2026-02-07T17:50:22.963Z",
+      "createdBy": "tsarra_nade"
+    },
+    {
+      "name": "The Pasture",
+      "category": "Ship",
+      "description": "The Pasture is a Viti Levu class super transport, renowned as one of the three sister ships designed to accommodate thousands of species simultaneously. It is the most active among the sister ships and often draws comparisons to the biblical story of Noah's ark due to its purpose and functionality.",
+      "isUpdate": false,
+      "relatedTopics": [],
+      "id": "1770487861691",
+      "createdAt": "2026-02-07T18:11:01.691Z",
       "createdBy": "tsarra_nade"
     }
   ]

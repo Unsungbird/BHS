@@ -3,6 +3,7 @@ const { Client, GatewayIntentBits } = require('discord.js');
 const OpenAI = require('openai');
 const fs = require('fs');
 const path = require('path');
+const { execSync } = require('child_process');
 
 // Initialize Discord bot
 const client = new Client({
@@ -33,6 +34,76 @@ function loadWikiData() {
 // Save wiki data
 function saveWikiData(data) {
   fs.writeFileSync(dataPath, JSON.stringify(data, null, 2));
+}
+
+// Auto-sync to GitHub
+function syncToGitHub() {
+  try {
+    const projectRoot = path.join(__dirname, '..');
+    
+    // Copy data file to docs folder
+    const sourceFile = path.join(projectRoot, 'data', 'wiki-data.json');
+    const destFile = path.join(projectRoot, 'docs', 'data', 'wiki-data.json');
+    
+    // Ensure docs/data directory exists
+    const docsDataDir = path.join(projectRoot, 'docs', 'data');
+    if (!fs.existsSync(docsDataDir)) {
+      fs.mkdirSync(docsDataDir, { recursive: true });
+    }
+    
+    fs.copyFileSync(sourceFile, destFile);
+    
+    // Git commands
+    const timestamp = new Date().toISOString();
+    execSync('git add docs/data/wiki-data.json', { cwd: projectRoot });
+    execSync(`git commit -m "Auto-update wiki entries - ${timestamp}"`, { cwd: projectRoot });
+    execSync('git push', { cwd: projectRoot });
+    
+    console.log('✅ Wiki synced to GitHub successfully!');
+    return true;
+  } catch (error) {
+    console.error('❌ Error syncing to GitHub:', error.message);
+    return false;
+  }
+}
+
+// Retroactively update related entries
+function updateRelatedEntries(wikiData, newEntryName) {
+  let updatesCount = 0;
+  
+  // Scan all existing entries
+  wikiData.entries.forEach(entry => {
+    if (entry.name.toLowerCase() === newEntryName.toLowerCase()) {
+      return; // Skip the entry we just added
+    }
+    
+    // Check if this entry's description mentions the new entry
+    const descriptionLower = entry.description.toLowerCase();
+    const newEntryLower = newEntryName.toLowerCase();
+    
+    // Use word boundary regex to match whole words only
+    const regex = new RegExp(`\\b${newEntryLower}\\b`, 'i');
+    
+    if (regex.test(descriptionLower)) {
+      // Initialize relatedTopics if it doesn't exist
+      if (!entry.relatedTopics) {
+        entry.relatedTopics = [];
+      }
+      
+      // Add the new entry to relatedTopics if not already there
+      if (!entry.relatedTopics.some(topic => topic.toLowerCase() === newEntryLower)) {
+        entry.relatedTopics.push(newEntryName);
+        updatesCount++;
+      }
+    }
+  });
+  
+  if (updatesCount > 0) {
+    saveWikiData(wikiData);
+    console.log(`🔗 Updated ${updatesCount} existing entries with links to "${newEntryName}"`);
+  }
+  
+  return updatesCount;
 }
 
 // Process wiki entry with ChatGPT
@@ -147,6 +218,15 @@ client.on('messageCreate', async (message) => {
       // Save data
       saveWikiData(wikiData);
 
+      // Retroactively update related entries
+      updateRelatedEntries(wikiData, processed.name);
+
+      // Auto-sync to GitHub
+      const synced = syncToGitHub();
+      if (synced) {
+        await processingMsg.edit(processingMsg.content + '\n\n🔄 *Synced to website!*');
+      }
+
     } catch (error) {
       console.error('Error processing wiki entry:', error);
       message.reply('❌ Sorry, there was an error processing that entry. Please try again.');
@@ -163,12 +243,20 @@ Example: \`!wiki Moon Heliograss A habitable moon with forests\`
 \`!wiki [content]\` - Add entry (AI chooses category)
 Example: \`!wiki Gandor is a sketchy merchant\`
 
-**Valid Categories:**
-Location, NPC, Item, Lore, Event, Faction, Moon, Planet, System, Station, Ship, Species, Organization, Technology, Other
+\`!wiki-edit [Name] [New Description]\` - Edit an existing entry
+Example: \`!wiki-edit Earth A beautiful blue planet\`
+**For multi-word names:** \`!wiki-edit "Commander Gize" New description here\`
+
+\`!wiki-delete [Name]\` - Delete an entry
+Example: \`!wiki-delete OldPlanet\`
+**For multi-word names:** \`!wiki-delete "Commander Gize Zapico"\`
 
 \`!wiki-search [term]\` - Search for wiki entries
 \`!wiki-stats\` - Show wiki statistics
-\`!wiki-help\` - Show this help message`);
+\`!wiki-help\` - Show this help message
+
+**Valid Categories:**
+Location, NPC, Item, Lore, Event, Faction, Moon, Planet, System, Station, Ship, Species, Organization, Technology, Other`);
   }
 
   // Stats command
@@ -232,6 +320,115 @@ ${entry.description}
 ${resultsList}${more}
 
 Use \`!wiki-search [exact name]\` to see details.`);
+    }
+  }
+
+  // Delete command
+  if (message.content.startsWith('!wiki-delete ')) {
+    const entryName = message.content.slice(13).trim();
+    
+    if (!entryName) {
+      return message.reply('❌ Please provide an entry name.\n\n**Format:** `!wiki-delete [Name]`\n**Example:** `!wiki-delete Waterdeep`\n**For multi-word names:** `!wiki-delete "Commander Gize Zapico"`');
+    }
+
+    // Remove quotes if present
+    const cleanName = entryName.replace(/^["']|["']$/g, '');
+
+    const wikiData = loadWikiData();
+    const entryIndex = wikiData.entries.findIndex(
+      entry => entry.name.toLowerCase() === cleanName.toLowerCase()
+    );
+
+    if (entryIndex === -1) {
+      return message.reply(`❌ Entry "${cleanName}" not found.`);
+    }
+
+    const deletedEntry = wikiData.entries[entryIndex];
+    wikiData.entries.splice(entryIndex, 1);
+    saveWikiData(wikiData);
+
+    // Sync to GitHub
+    const synced = syncToGitHub();
+    const syncMsg = synced ? '\n🔄 *Synced to website!*' : '';
+
+    message.reply(`🗑️ Deleted **${deletedEntry.name}** (${deletedEntry.category})${syncMsg}`);
+  }
+
+  // Edit command
+  if (message.content.startsWith('!wiki-edit ')) {
+    const content = message.content.slice(11).trim();
+    
+    // Check if content starts with a quote (for multi-word names)
+    let entryName, newDescription;
+    
+    if (content.startsWith('"') || content.startsWith("'")) {
+      // Extract quoted name
+      const quoteChar = content[0];
+      const endQuoteIndex = content.indexOf(quoteChar, 1);
+      
+      if (endQuoteIndex === -1) {
+        return message.reply('❌ Missing closing quote.\n\n**Format:** `!wiki-edit "[Name]" [New Description]`\n**Example:** `!wiki-edit "Commander Gize" A skilled military officer`');
+      }
+      
+      entryName = content.slice(1, endQuoteIndex).trim();
+      newDescription = content.slice(endQuoteIndex + 1).trim();
+    } else {
+      // Original parsing (first space separates name from description)
+      const firstSpaceIndex = content.indexOf(' ');
+      if (firstSpaceIndex === -1) {
+        return message.reply('❌ Please provide both name and new description.\n\n**Format:** `!wiki-edit [Name] [New Description]`\n**For multi-word names:** `!wiki-edit "Commander Gize Zapico" [New Description]`\n**Example:** `!wiki-edit Earth A beautiful blue planet with diverse ecosystems`');
+      }
+
+      entryName = content.slice(0, firstSpaceIndex).trim();
+      newDescription = content.slice(firstSpaceIndex + 1).trim();
+    }
+
+    if (!newDescription) {
+      return message.reply('❌ Please provide a new description.');
+    }
+
+    const wikiData = loadWikiData();
+    const entryIndex = wikiData.entries.findIndex(
+      entry => entry.name.toLowerCase() === entryName.toLowerCase()
+    );
+
+    if (entryIndex === -1) {
+      return message.reply(`❌ Entry "${entryName}" not found. Use \`!wiki-search ${entryName}\` to find similar entries.`);
+    }
+
+    try {
+      const processingMsg = await message.reply('🔄 Processing edit...');
+      
+      // Use AI to clean up the new description and maintain style
+      const processed = await processWikiEntry(
+        `${entryName}: ${newDescription}`,
+        wikiData.entries.filter((_, i) => i !== entryIndex),
+        wikiData.entries[entryIndex].category
+      );
+
+      // Update the entry
+      wikiData.entries[entryIndex] = {
+        ...wikiData.entries[entryIndex],
+        description: processed.description,
+        relatedTopics: processed.relatedTopics || wikiData.entries[entryIndex].relatedTopics,
+        updatedAt: new Date().toISOString(),
+        updatedBy: message.author.username,
+      };
+
+      saveWikiData(wikiData);
+
+      // Retroactively update related entries
+      updateRelatedEntries(wikiData, wikiData.entries[entryIndex].name);
+
+      // Sync to GitHub
+      const synced = syncToGitHub();
+      const syncMsg = synced ? '\n\n🔄 *Synced to website!*' : '';
+
+      await processingMsg.edit(`✅ Updated **${wikiData.entries[entryIndex].name}**!\n\n*"${wikiData.entries[entryIndex].description}"*${syncMsg}`);
+
+    } catch (error) {
+      console.error('Error editing entry:', error);
+      message.reply('❌ Sorry, there was an error editing that entry. Please try again.');
     }
   }
 });
