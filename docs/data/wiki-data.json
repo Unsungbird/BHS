@@ -664,6 +664,20 @@
       "id": "1773875801821",
       "createdAt": "2026-03-18T23:16:41.821Z",
       "createdBy": "tsarra_nade"
+    },
+    {
+      "name": "The Frozen King",
+      "category": "NPC",
+      "description": "The Frozen King is a mysterious leader of the Order of Abzu, renowned for his chilling practices involving the bathing and drinking of leviathan blood. He is one of the few entities believed to possess knowledge about the tales of the First Among All, making him a figure of great intrigue and power within the universe.",
+      "isUpdate": false,
+      "relatedTopics": [
+        "Order of Abzu",
+        "Leviathan Prime",
+        "The First Among All"
+      ],
+      "id": "1773876030586",
+      "createdAt": "2026-03-18T23:20:30.586Z",
+      "createdBy": "tsarra_nade"
     }
   ]
 }
