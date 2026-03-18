@@ -650,6 +650,20 @@
       "id": "1770487861691",
       "createdAt": "2026-02-07T18:11:01.691Z",
       "createdBy": "tsarra_nade"
+    },
+    {
+      "name": "Leviathan Prime",
+      "category": "NPC",
+      "description": "The Leviathan Prime is a legendary beast believed to swim in the Oceans of Abzu. Revered by those who worship him, he is thought to be the biblical Leviathan, and some even claim that the world and the Order have been named in his honor. The Frozen King, along with his cult, bases its ideology on the mythos surrounding this ancient creature, intertwining it with their beliefs.",
+      "isUpdate": false,
+      "relatedTopics": [
+        "Abzu",
+        "Order of Abzu",
+        "The Frozen King"
+      ],
+      "id": "1773875801821",
+      "createdAt": "2026-03-18T23:16:41.821Z",
+      "createdBy": "tsarra_nade"
     }
   ]
 }
