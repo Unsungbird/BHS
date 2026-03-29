@@ -687,10 +687,25 @@
       "relatedTopics": [
         "Concord of Systems",
         "Shu",
-        "Niflheim"
+        "Niflheim",
+        "The Black Kennel"
       ],
       "id": "1774823975998",
       "createdAt": "2026-03-29T22:39:35.998Z",
+      "createdBy": "tsarra_nade"
+    },
+    {
+      "name": "The Black Kennel",
+      "category": "Planet",
+      "description": "The Black Kennel is the latest penal colony established by the Concord of Systems, characterized by its forceful establishment similar to a modern-day Wild West. Unlike prior colonies such as Shu and Niflheim, which required waivers from their prisoners, The Black Kennel aims to have the most dangerous individuals build the necessary infrastructure with an uncertain future plan for them. Recent assessments show that the colony is stabilizing, with birth rates beginning to exceed death rates.",
+      "isUpdate": false,
+      "relatedTopics": [
+        "Concord of Systems",
+        "Shu",
+        "Niflheim"
+      ],
+      "id": "1774824261801",
+      "createdAt": "2026-03-29T22:44:21.801Z",
       "createdBy": "tsarra_nade"
     }
   ]
