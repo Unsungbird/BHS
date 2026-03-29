@@ -678,6 +678,20 @@
       "id": "1773876030586",
       "createdAt": "2026-03-18T23:20:30.586Z",
       "createdBy": "tsarra_nade"
+    },
+    {
+      "name": "Sirius",
+      "category": "System",
+      "description": "The Sirius system stands as a testament to humanity's expanding reach in the galaxy, housing the recently established penal colony known as 'The Black Kennel.' This development follows the successes of the Concord of Systems on planets like Shu and Niflheim, offering a stark contrast where the bright light of Sirius illuminates the darkest souls involved in this new phase of colonization.",
+      "isUpdate": false,
+      "relatedTopics": [
+        "Concord of Systems",
+        "Shu",
+        "Niflheim"
+      ],
+      "id": "1774823975998",
+      "createdAt": "2026-03-29T22:39:35.998Z",
+      "createdBy": "tsarra_nade"
     }
   ]
 }
