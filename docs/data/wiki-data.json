@@ -725,7 +725,9 @@
       "category": "NPC",
       "description": "Connie and Blyde are a notorious duo known for their daring intragalactic heists, establishing themselves as legends among thieves. This lovestruck pair traveled across various planets, hopping ferries and robbing unsuspecting victims, leading to the formation of numerous space travel regulations. Now settled as tavern keepers in the Dry Bone Basin, they run the Dish, one of the few alcoholic oases in the region, catering to weary travelers and adventurers alike.",
       "isUpdate": false,
-      "relatedTopics": [],
+      "relatedTopics": [
+        "Dry Bone Basin"
+      ],
       "id": "1775244484938",
       "createdAt": "2026-04-03T19:28:04.938Z",
       "createdBy": "tsarra_nade"
@@ -740,6 +742,16 @@
       ],
       "id": "1775244548952",
       "createdAt": "2026-04-03T19:29:08.952Z",
+      "createdBy": "tsarra_nade"
+    },
+    {
+      "name": "Dry Bone Basin",
+      "category": "Location",
+      "description": "Dry Bone Basin is a small, haphazard town that serves as a haven for outlaws looking to lay low. Characterized by a collection of makeshift buildings including a saloon, a brothel, and various trade posts, it exists in a delicate balance where law is dictated by fear and firepower. The remnants of previous homesteads are a cautionary tale, as local militias often eradicate outposts like these, only for new ones to emerge elsewhere on the planet.",
+      "isUpdate": false,
+      "relatedTopics": [],
+      "id": "1775244654338",
+      "createdAt": "2026-04-03T19:30:54.338Z",
       "createdBy": "tsarra_nade"
     }
   ]
