@@ -719,6 +719,16 @@
       "id": "1774824475926",
       "createdAt": "2026-03-29T22:47:55.926Z",
       "createdBy": "tsarra_nade"
+    },
+    {
+      "name": "Connie and Blyde",
+      "category": "NPC",
+      "description": "Connie and Blyde are a notorious duo known for their daring intragalactic heists, establishing themselves as legends among thieves. This lovestruck pair traveled across various planets, hopping ferries and robbing unsuspecting victims, leading to the formation of numerous space travel regulations. Now settled as tavern keepers in the Dry Bone Basin, they run the Dish, one of the few alcoholic oases in the region, catering to weary travelers and adventurers alike.",
+      "isUpdate": false,
+      "relatedTopics": [],
+      "id": "1775244484938",
+      "createdAt": "2026-04-03T19:28:04.938Z",
+      "createdBy": "tsarra_nade"
     }
   ]
 }
