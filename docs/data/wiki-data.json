@@ -729,6 +729,18 @@
       "id": "1775244484938",
       "createdAt": "2026-04-03T19:28:04.938Z",
       "createdBy": "tsarra_nade"
+    },
+    {
+      "name": "The Black Tooth Grin Gang",
+      "category": "Faction",
+      "description": "The Black Tooth Grin Gang is a notorious group of marauders that have escaped the chain gangs of the colony. They serve as society's dregs, engaging in violent extortion rackets that prey on both the weak and the strong across the barren wastes surrounding the true prisons on the Kennel. Some independent settlements have formed self-protection militias due to their predations, while others surprisingly welcome their presence as a form of harsh order.",
+      "isUpdate": false,
+      "relatedTopics": [
+        "The Black Kennel"
+      ],
+      "id": "1775244548952",
+      "createdAt": "2026-04-03T19:29:08.952Z",
+      "createdBy": "tsarra_nade"
     }
   ]
 }
