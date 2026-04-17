@@ -753,16 +753,6 @@
       "id": "1775244654338",
       "createdAt": "2026-04-03T19:30:54.338Z",
       "createdBy": "tsarra_nade"
-    },
-    {
-      "name": "Help",
-      "category": "Other",
-      "description": "Help is a term often used to refer to the assistance or guidance provided in various contexts. In the world of TTRPGs, it can encompass a wide range of services, including rules clarification, NPC interactions, and game mechanics support. Players and game masters frequently rely on help to enhance their gameplay experience and navigate the complexities of the game.",
-      "isUpdate": false,
-      "relatedTopics": [],
-      "id": "1776108161452",
-      "createdAt": "2026-04-13T19:22:41.452Z",
-      "createdBy": "tsarra_nade"
     }
   ]
 }
