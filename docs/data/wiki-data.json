@@ -753,6 +753,20 @@
       "id": "1775244654338",
       "createdAt": "2026-04-03T19:30:54.338Z",
       "createdBy": "tsarra_nade"
+    },
+    {
+      "name": "Sheriff Granger",
+      "category": "NPC",
+      "description": "Sheriff Granger is a notorious member of the Blacktooth Grin Gang and one of the original inhabitants of the Black Kennel. A terrifying figure, he is known for his cruel acts of murder, often feeding his victims to the dogs and pigs on his farm. Now, he roams the Dry Bone Basin with his pack of coyotes, allowing his prey to grow in value before consuming them.",
+      "isUpdate": false,
+      "relatedTopics": [
+        "The Black Kennel",
+        "The Black Tooth Grin Gang",
+        "Dry Bone Basin"
+      ],
+      "id": "1781549370917",
+      "createdAt": "2026-06-15T18:49:30.917Z",
+      "createdBy": "tsarra_nade"
     }
   ]
 }
